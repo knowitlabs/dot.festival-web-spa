@@ -15,7 +15,7 @@
     "assets": "mkdir -p dist && cp -a ./public/. ./dist/",
     "prebuild": "npm run clean && npm run assets",
     "build": "rollup -c rollup.config.js",
-    "postbuild": "bash -c 'mv -f ./dist/*.{js,ts,map} ./dist/js'",
+    "postbuild": "bash -c 'mv -f ./dist/*.{js,map} ./dist/js'",
     "build:watch": "rollup -c rollup.config.js -w",
     "commit": "git cz"
   },
