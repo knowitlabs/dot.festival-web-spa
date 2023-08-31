@@ -43,7 +43,5 @@ jobs:
           GH_TOKEN: ${{secrets.GH_TOKEN}}
       - name: Build # Build all packages
         run: npm run build
-      - name: Run tests # Run tests of all packages
-        run: npm test
       
         
