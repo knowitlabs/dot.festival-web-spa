@@ -2,11 +2,17 @@
   position relative
   background-repeat no-repeat
   background-image url(../images/8dddb761187601b14ad9d911f36d9fba.png)
-  background-size 30rem 30rem
-  background-position left 0 center
-  min-height 40rem
+  background-size contain
+  background-position top 0 center
+  height 50vh
   display flex
   flex-direction column
+  counter-reset points
+  @media screen and (min-width: 1440px)
+    min-height 400px
+    height auto
+    background-position left 0 center
+    background-size 30rem 30rem
 
 .dot.hero
   & h1.dot
@@ -20,3 +26,4 @@
     margin-bottom 0
     margin-left auto
     max-width 600px
+

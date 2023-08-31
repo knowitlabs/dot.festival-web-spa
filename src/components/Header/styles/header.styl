@@ -1,8 +1,23 @@
 .dot.header
   position relative
-  margin-top 9rem
+  
 
 .dot.header
   & .dot.logo
-    max-width 15rem
+    margin-top auto
     display block
+    flex-grow 1
+    flex-shrink 0
+    & svg
+      max-width 15rem
+      
+
+
+.dot.header    
+  & .dot.container
+    height 8rem
+    position relative
+    padding-bottom 2rem
+    display flex
+    @media screen and (min-width: 640px)
+      height 16rem
