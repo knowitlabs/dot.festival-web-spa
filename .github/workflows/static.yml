@@ -42,11 +42,11 @@ jobs:
       - name: Install dependencies
         run: | # Install and link dependencies
           npm i
-          npm i -g ts-node rollup@^3.21.4
+          npm i -g rollup@^3.21.4
         env:
           GH_TOKEN: ${{secrets.GH_TOKEN}}
       - name: Build # Build
-        run: npm run build:prod
+        run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
