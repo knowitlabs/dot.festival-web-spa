@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "ES2020",
+    "target": "es2022",
+    "lib": ["ES2021", "dom", "dom.iterable"],
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "./dts",
+    "moduleResolution": "node",
+    "rootDirs": ["src"],
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "typeRoots": ["./node_modules/@types"],
+    "resolveJsonModule": true,
+    "skipLibCheck": true
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node",
+    "transpileOnly": true,
+    "require": ["dotenv/config", "tsconfig-paths/register"]
+  },
+  "exclude": ["node_modules", "dist", "*.json"]
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "includeVersion": true,
+  "hideInPageTOC": false,
+  "entryPoints": ["src/index.ts"],
+  "gitRevision": "main",
+  "githubPages": false,
+  "out": "@docs",
+  "plugin": ["typedoc-plugin-markdown"]
+}

@@ -1,0 +1,30 @@
+'section: tests':
+  - '**/__tests__/**'
+  - 'jest.config.ts'
+'section: workflows':
+  - .github/workflows/**
+'section: repo':
+  - '*'
+'experience: developer':
+  - '.eslintignore'
+  - '.eslintrc.json'
+  - '.gitignore'
+  - '.npmrc'
+  - '.prettierrc'
+  - 'tslint.json'
+  - '.stylintrc'
+  - '.postcssrc.cjs'
+  - '.postcssrc.js'
+'context: github':
+  - .github/**
+'context: docker':
+  - Dockerfile
+'context: npm':
+  - '.npmrc'
+'context: rollup':
+  - 'rollup.config.js'
+  - 'rollup.*.config.js'
+'mindless: docs':
+  - '**/*.md'
+'mindless: dependencies':
+  - 'package-lock.json'
