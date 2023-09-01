@@ -1,0 +1,65 @@
+.dot.button,
+a.dot.button
+  text-decoration none
+  border none
+  border 0.125rem solid transparent
+  min-width 3rem
+  min-height 3rem
+  width 100%
+  max-width 28ch
+  flex-grow 0
+  flex-shrink 0
+  border-radius 3rem
+  display flex
+  align-items center
+  justify-content center
+  background-color transparent
+  color currentColor
+  font-family var(--dot-font-family-default)
+  font-size 1rem
+  line-height 140%
+  font-weight 600
+  padding 1.5rem 2rem
+
+
+.dot.button
+  &:hover
+    background-color var(--dot-color-magenta)
+    color var(--dot-color-black)
+
+
+.dot.button
+  &.primary
+    background-color var(--dot-color-black)
+    color var(--dot-color-whiteShoulders)
+
+.dot.button
+  &.cta
+    background-color var(--dot-color-whiteShoulders)
+    color var(--dot-color-black)
+    font-size 1.5rem
+    height 4rem
+
+.dot.button
+  &.primary
+    &:hover
+      background-color var(--dot-color-magenta)
+      color var(--dot-color-black)
+
+.dot.button
+  &.cta
+    &:hover
+      background-color var(--dot-color-magenta)
+      color var(--dot-color-black)
+
+
+.dot.button
+  & .dot.icon
+    margin-left 1rem
+
+.dot.button
+  &:hover
+    & .dot.icon
+      & svg
+        fill white
+        stroke-width 2

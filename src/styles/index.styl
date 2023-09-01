@@ -7,17 +7,75 @@
 
 
 
-.dot.point
-  position absolute
-  border-radius 100%
-  height 0.25rem
-  width 0.25rem
-  counter-increment points
-  display block
-  background-color var(--dot-color-whiteShoulders)
+.dot.dotter
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  pointer-events none
+  color var(--dot-color-fortressGrey)
 
-  &::after
-    top 50%
-    left calc(100% + 0.5rem)
-    content counter(points)
-    position absolute
+
+.dot.dotter
+  & text
+    font-family var(--dot-font-family-default)
+    font-size 8px
+    @media screen and (min-width: 640px)
+      font-size 8px
+    @media screen and (min-width: 1024px)
+      font-size 10px
+    @media screen and (min-width: 1440px)
+      font-size 12px
+
+
+.dot.text-box
+  padding 1rem 1.5rem
+  @media screen and (min-width: 640px)
+    padding 3rem 2rem
+  @media screen and (min-width: 1024px)
+    padding 4rem 3rem
+  @media screen and (min-width: 1440px)
+    padding 5rem 4rem
+
+
+.dot.text-box
+  &.green
+    background-color var(--dot-color-hyperGreen)
+    color var(--dot-color-black)
+
+
+.dot.text-box
+  & .dot.title
+    font-weight bold
+
+.dot.text-box
+  & .dot.description
+    font-size 1.125rem
+    line-height 130%
+    margin-bottom 1rem
+    font-weight normal
+    @media screen and (min-width: 640px)
+      font-size 1.5rem
+      margin-bottom 2rem
+    @media screen and (min-width: 1024px)
+      font-size 1.75rem
+      margin-bottom 3rem
+    @media screen and (min-width: 1440px)
+      font-size 2.125rem
+      margin-bottom 4rem
+
+.dot.layout-text
+  grid-gap 1rem
+  display grid
+
+
+.dot.layout-text.three-columns
+  grid-template-columns 1fr
+  @media screen and (min-width: 1024px)
+    grid-template-columns 1fr 1fr 1fr
+
+.dot.layout-text
+  & p.dot
+    font-size 1.125rem
+    line-height 1.5rem

@@ -1,0 +1,57 @@
+.dot.hero
+  position relative
+  display grid
+  margin-bottom 3rem
+  grid-template-areas "hero-image"\
+                      "hero-title"\
+                      "hero-lead"\
+                      "hero-actions"
+  @media screen and (min-width: 1024px)
+    grid-template-areas "hero-image hero-title"\
+                        "hero-image hero-lead"\
+                        ". hero-actions"
+    margin-bottom 4rem
+  @media screen and (min-width: 1440px)
+    margin-bottom 6rem
+    
+
+.dot.hero
+  & .dot.image
+    grid-area hero-image
+    object-fit contain
+    max-height 50vh
+    max-width 100%
+    // @media screen and (min-width: 640px)
+    
+.dot.hero
+  & h1.dot
+    grid-area hero-title
+    margin-bottom 2rem
+    margin-left auto
+    max-width 600px
+    font-size 1.75rem
+    text-align right
+    margin-top auto
+    @media screen and (min-width: 640px)
+      font-size 2rem
+    @media screen and (min-width: 1024px)
+      font-size 2.75rem
+      margin-bottom 3.5rem
+    @media screen and (min-width: 1440px)
+      font-size 3rem
+
+.dot.hero
+  & p.dot.lead
+    grid-area hero-lead
+    margin-bottom 0
+    margin-left auto
+    max-width 600px
+    font-size 1.125rem
+    text-align right
+    @media screen and (min-width: 640px)
+      font-size 1.25rem
+    @media screen and (min-width: 1024px)
+      font-size 1.5rem
+    @media screen and (min-width: 1440px)
+      font-size 1.5rem
+

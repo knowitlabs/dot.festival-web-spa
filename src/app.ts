@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { KIRouterMatchType } from './@types/module/router';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import Footer from './components/page-section/Footer';
+import Header from './components/page-section/Header';
 import { dotter } from './lib/dotter';
 import { getParams } from './lib/get-params';
 import { addOnAfterAppRender } from './lib/spa';

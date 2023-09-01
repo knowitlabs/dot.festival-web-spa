@@ -1,4 +1,4 @@
-import logo from '../../../public/images/logo/knowit-logo.svg';
+import logo from '../../../../public/images/logo/knowit-logo.svg';
 
 import './styles/footer.styl';
 

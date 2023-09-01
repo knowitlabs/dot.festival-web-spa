@@ -1,4 +1,4 @@
-import logo from '../../../public/images/logo/logo.svg';
+import logo from '../../../../public/images/logo/logo.svg';
 
 import './styles/header.styl';
 
