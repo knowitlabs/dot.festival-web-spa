@@ -1,6 +1,7 @@
 import Hero from '../../components/page-section/Hero';
 
 import '../../components/action/Button/styles/button.styl';
+import { Link } from '../../components/navigation/Link';
 
 const html = String.raw;
 
@@ -14,14 +15,13 @@ export const StartPage = async () => {
           coders, number crushers, market influencers, engineers, business
           innovators, and more.
         </p>
-        <a
-          class="dot button primary"
-          style="margin-bottom: 4rem;"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Register proposal
-        </a>
+        ${Link({
+    to: 'https://sessionize.com/dot-festival-2024-oslo/',
+    server: true,
+    content: 'Register proposal',
+    className: 'dot button',
+    style: 'margin-bottom: 4rem;'
+  })}
         <div class="dot layout-text three-columns">
           <div class="dot">
             <h3 class="dot">Call for speakers</h3>

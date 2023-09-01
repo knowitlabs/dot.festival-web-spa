@@ -1,3 +1,4 @@
+import { Link } from '../../navigation/Link';
 import './styles/hero.styl';
 
 const html = String.raw;
@@ -15,6 +16,14 @@ const Hero = async () => {
       Join us for a 2 day creative festival with talks, workshops, and social
       events. Coming soon.
     </p>
+    <div class="dot actions">
+      ${Link({
+    to: 'https://6g52rc80nij.typeform.com/to/fcxtlQF7',
+    className: 'button primary',
+    server: true,
+    content: 'Register now!'
+  })}
+    </div>
   </div>`;
 };
 
