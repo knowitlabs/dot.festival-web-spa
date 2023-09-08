@@ -21,7 +21,7 @@ export const StartPage = async () => {
     <section class="dot section" style="display:none;">
       <div class="dot container center">
         ${EditorialBanner({
-    image: '/images/editorial/KDS2023-704602',
+    image: 'images/editorial/KDS2023-704602',
     focal: 'center top',
     content: `
     <span class="dot title">Upcoming event</span>

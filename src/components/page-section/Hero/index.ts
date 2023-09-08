@@ -18,9 +18,8 @@ const Hero = async () => {
     </p>
     <div class="dot actions">
       ${Link({
-    to: '/register',
+    to: 'register',
     className: 'button primary',
-    server: true,
     content: 'Register now!'
   })}
     </div>
