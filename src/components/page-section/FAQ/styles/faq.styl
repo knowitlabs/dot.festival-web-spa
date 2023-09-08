@@ -1,0 +1,96 @@
+.dot.faq 
+  margin 0
+  margin-right auto
+  position relative
+  width 100%
+  max-width 72ch
+
+
+.dot.faq .dot.question::-webkit-details-marker 
+  display none
+
+.dot.faq:last-of-type 
+  border-bottom none
+
+.dot.faq .dot.question 
+  font-weight 600
+  margin 0
+  padding 0
+  box-sizing border-box
+  list-style none
+  align-items center
+  cursor pointer
+  display flex  
+  height auto
+  position relative
+  width 100%
+  border none
+  appearance none
+  -webkit-appearance none
+  padding 1rem 0
+
+.dot.faq .dot.answer 
+  font-weight normal
+  letter-spacing normal
+  margin 0
+  padding 0
+  box-sizing border-box
+  position relative
+  width 100%
+  flex-direction column
+  align-items flex-start
+  overflow hidden
+  max-height 0
+  display block
+  visibility hidden
+
+
+  
+
+.dot.faq[open] .dot.answer 
+  display block
+  visibility visible
+  max-height 50vh
+  overflow-x hidden
+  overflow-y auto
+
+.dot.faq[open] .dot.answer 
+  & p.dot
+    color var(--dot-color-fortressGrey) 
+
+.dot.faq .dot.question:hover
+  & svg
+    color var(--dot-color-hyperGreen)
+
+.dot.faq .dot.question
+  & svg
+    fill currentColor
+    right 1.5rem
+    transition all 0.2s cubic-bezier(0.4, 0, 0.2, 1)
+    position absolute
+    display block
+    top 50%
+    transform translateY(-50%)
+    height 2rem
+    width 2rem
+
+
+.dot.faq[open] .dot.question
+  & svg 
+    transform translateY(-50%) rotate(180deg)
+
+
+
+.dot.faq > .question > .dot.title:focus
+  outline var(--dot-color-hyperGreen) solid 0.1875rem
+  outline-offset 0.125rem
+
+
+.dot.faq > .question > .dot.title:focus:not(:focus-visible) 
+  outline none
+
+
+.dot.faq > .question > .dot.title:focus-visible 
+  outline var(--dot-color-hyperGreen) solid 0.1875rem
+  outline-offset 0.125rem
+

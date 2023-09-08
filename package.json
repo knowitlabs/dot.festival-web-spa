@@ -67,6 +67,8 @@
     "@knowitlabs/cx": "^0.1.4",
     "@knowitlabs/hash": "^0.1.3",
     "@knowitlabs/spa": "^0.1.0",
-    "@knowitlabs/wait-for": "^0.1.3"
+    "@knowitlabs/types": "^0.2.0",
+    "@knowitlabs/wait-for": "^0.1.3",
+    "@typeform/embed": "^2.16.1"
   }
 }

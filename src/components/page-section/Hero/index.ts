@@ -18,7 +18,7 @@ const Hero = async () => {
     </p>
     <div class="dot actions">
       ${Link({
-    to: 'https://6g52rc80nij.typeform.com/to/fcxtlQF7',
+    to: '/register',
     className: 'button primary',
     server: true,
     content: 'Register now!'

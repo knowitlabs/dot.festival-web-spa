@@ -11,14 +11,22 @@
     "noImplicitAny": false,
     "strictNullChecks": true,
     "esModuleInterop": true,
-    "typeRoots": ["./src/@types", "./node_modules/@types"],
+    "typeRoots": [
+      "./src/@types",
+      "./node_modules/@types",
+      "./node_modules/@knowitlabs/types"
+    ],
     "resolveJsonModule": true,
     "types": ["node"]
   },
   "ts-node": {
     "esm": true,
     "experimentalSpecifierResolution": "node",
-    "typeRoots": ["./src/@types", "./node_modules/@types"],
+    "typeRoots": [
+      "./src/@types",
+      "./node_modules/@types",
+      "./node_modules/@knowitlabs/types"
+    ],
     "transpileOnly": true
   },
   "exclude": ["node_modules", "dist", "*.json"]

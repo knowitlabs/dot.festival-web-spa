@@ -5,13 +5,13 @@ export const ErrorPage = ({ params }) => {
 
   return html`<section class="dot section">
     <div class="dot container">
-      <h1 class="ki">Something went wrong</h1>
-      <p class="ki">It is not your fault, it's us. Please try again later</p>
+      <h1 class="dot">Something went wrong</h1>
+      <p class="dot">It is not your fault, it's us. Please try again later</p>
 
       <div class="dot message error">
-        <p class="ki">${error}</p>
+        <p class="dot">${error}</p>
         <pre class="dot language-jsstacktrace">
-          <code class="ki">${error.stack}</code>
+          <code class="dot">${error.stack}</code>
         </pre>
       </div>
     </div>

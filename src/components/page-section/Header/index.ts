@@ -8,7 +8,7 @@ const Header = async () => {
   return html`
     <header class="dot header">
       <div class="dot container">
-        <span class="dot logo"> ${logo} </span>
+        ${Link({ to: '/', content: logo, className: 'logo' })}
         ${Link({
     to: 'https://sessionize.com/dot-festival-2024-oslo/',
     server: true,

@@ -3,6 +3,7 @@
 @import './a11y.styl'
 @import './globals.styl'
 @import './tags.styl'
+@import './section.styl'
 @import './container.styl'
 
 
@@ -66,8 +67,10 @@
       margin-bottom 4rem
 
 .dot.layout-text
-  grid-gap 1rem
+  grid-gap 0
   display grid
+  @media screen and (min-width: 1024px)
+    grid-gap 3rem
 
 
 .dot.layout-text.three-columns

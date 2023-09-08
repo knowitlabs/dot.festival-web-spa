@@ -34,6 +34,7 @@ const App = async (match: KIRouterMatchType, params: unknown) => {
   addOnAfterAppRender(() => {
     dotter();
   });
+  console.log(PAGES, _page);
 
   const content = await PAGES[_page]({ params: _params });
 
