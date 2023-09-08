@@ -32,7 +32,7 @@ export const RegisterPage = () => {
 
   return html`<div
     class="dot container"
-    style="display: flex; flex-direction:column;height:100%;"
+    style="display: flex; flex-direction:column;height:100%;min-height: 1000px;"
   >
     <h1 class="dot">Register</h1>
     <form id="register-form" style="height: 100%;"></form>
