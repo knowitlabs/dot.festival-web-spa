@@ -19,7 +19,7 @@ export const RegisterPage = () => {
             bubbles: true,
             cancelable: true,
             detail: {
-              to: '/register/receipt'
+              to: 'register/receipt'
             }
           });
 
