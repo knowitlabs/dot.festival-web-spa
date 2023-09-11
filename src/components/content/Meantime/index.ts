@@ -26,9 +26,12 @@ export const Meantime = () => {
             <h3 class="dot">Call for speakers</h3>
             <p class="dot">
               We want to encourage everyone to present. It does not have to be
-              long, nor does it have to be extensive. 5, 10 or 20 minutes, it is
+              long, nor does it have to be extensive. 10, 30 or 50 minutes, it is
               all up to you. It can be general, or very niche. We want someone
               from all skill levels and disciplinaries.
+            </p>
+            <p class="dot">
+             We also want workshops, 120 or 240 minutes, whatever works for you. How about a workshop to build an app in Flutter? Or have to conduct a gerilja user test?
             </p>
           </div>
           <div class="dot">
