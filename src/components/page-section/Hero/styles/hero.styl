@@ -1,7 +1,6 @@
 .dot.hero
   position relative
   display grid
-  margin-bottom 3rem
   grid-template-areas "hero-image"\
                       "hero-title"\
                       "hero-lead"\
@@ -11,10 +10,7 @@
                         "hero-image hero-title"\
                         "hero-image hero-lead"\
                         ". hero-actions"
-    margin-bottom 4rem
-  @media screen and (min-width: 1440px)
-    margin-bottom 6rem
-    
+
 
 .dot.hero
   & .dot.image
@@ -23,19 +19,20 @@
     max-height 50vh
     max-width 100%
     // @media screen and (min-width: 640px)
-    
+
 .dot.hero
   & h1.dot
     grid-area hero-title
     margin-bottom 2rem
-    margin-left auto
     max-width 600px
     font-size 1.75rem
-    text-align right
+    text-align left
     margin-top auto
     @media screen and (min-width: 640px)
       font-size 2rem
     @media screen and (min-width: 1024px)
+      text-align right
+      margin-left auto
       font-size 2.75rem
       margin-bottom 3.5rem
     @media screen and (min-width: 1440px)
@@ -44,15 +41,16 @@
 .dot.hero
   & p.dot.lead
     grid-area hero-lead
-    margin-bottom 1rem
-    margin-left auto
+    margin-bottom 2rem
     max-width 600px
     font-size 1.125rem
-    text-align right
+    text-align left
     @media screen and (min-width: 640px)
       font-size 1.25rem
-      margin-bottom 1rem
+      margin-bottom 2rem
     @media screen and (min-width: 1024px)
+      text-align right
+      margin-left auto
       font-size 1.5rem
       margin-bottom 2rem
     @media screen and (min-width: 1440px)
@@ -64,5 +62,8 @@
   & .dot.actions
     grid-area hero-actions
     display flex
-    align-items flex-end
-    justify-content flex-end
+    align-items flex-start
+    justify-content flex-start
+    @media screen and (min-width: 1024px)
+      align-items flex-end
+      justify-content flex-end
