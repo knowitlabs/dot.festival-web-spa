@@ -5,9 +5,7 @@ import { Link } from '../../navigation/Link';
 const html = String.raw;
 
 export const Meantime = () => {
-  return html`
-    
-      <div class="dot text-box green">
+  return html`<div class="dot text-box green">
         <h2 class="dot title">In the meantime</h2>
         <p class="dot description">
           We need you as our speakers, or to host a workshop! Makers, designers,
@@ -31,7 +29,9 @@ export const Meantime = () => {
               from all skill levels and disciplinaries.
             </p>
             <p class="dot">
-             We also want workshops, 120 or 240 minutes, whatever works for you. How about a workshop to build an app in Flutter? Or have to conduct a gerilja user test?
+             We also want workshops, 120 or 240 minutes, whatever works for you.
+             How about a workshop to build an app in Flutter? Or have to conduct
+             a gerilja user test?
             </p>
           </div>
           <div class="dot">
@@ -58,6 +58,5 @@ export const Meantime = () => {
         </div>
       </div>
     </div>
-
   `;
 };
