@@ -38,5 +38,21 @@ export const StartPage = async () => {
   })}
       </div>
     </section>
+    <section class="dot section" style="display:none;">
+      <div class="dot container">
+        <h2 class="dot speaker-wall-title">${translate('speakerWallTitle')}</h2>
+        <div class="dot speaker-wall" id="speaker-wall"></div>
+      </div>
+    </section>
+    <section class="dot section" style="display:none;">
+      <div class="dot container">
+        <div class="dot text-box white apple">
+          <h2 class="dot title">${translate('whatHappenedToKDSTitle')}</h2>
+          <p class="dot description" style="max-width:60%;">
+            ${translate('whatHappenedToKDSDescription')}
+          </p>
+        </div>
+      </div>
+    </section>
   `;
 };

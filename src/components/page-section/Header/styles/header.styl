@@ -27,20 +27,81 @@
     position relative
     padding-bottom 2rem
     display flex
+    align-items center
     @media screen and (min-width: 640px)
       height 16rem
 
 .dot.header
   & .dot.cfp
-    top 2rem
-    height auto
-    padding 0 0.5rem
-    width auto
+    position relative
+    margin-left auto
+
+.dot.header
+  & .dot.change-language-dropdown
+    margin-left 2rem
+
+
+.dot.global-navigation
+  margin-left auto
+  height 3rem
+  display flex
+  align-items center
+  justify-content flex-end
+
+
+.dot.dropdown
+  position relative
+
+.dot.dropdown
+  & .dot.dropdown-action
+    background-color transparent
+    color var(--dot-color-black)
+    border-radius 0
+    line-height 100%
     font-weight normal
+    border none
+    cursor pointer
+    font-size 1.125rem
+    height 3rem
+    padding 0.5rem 1rem
+    width 100%
+    display flex
+    align-items center
+    justify-content flex-start
+    &:hover
+      background-color var(--dot-color-hyperGreen)
+      color var(--dot-color-black)
+
+.dot.dropdown
+  & .dot.dropdown-list
+    display none
     position absolute
+    flex-direction column
     right 0
-    @media screen and (min-width: 640px)
-      top 4rem
-      padding 1.5rem 2rem
-      font-weight 600
+    top calc(100% + 0.5rem)
+    background-color var(--dot-color-whiteShoulders)
+    color var(--dot-color-black)
+    width 320px
+    z-index 300
+    border-radius 6px
+    box-shadow 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.2)
+
+.dot.dropdown
+  &.is-open
+    & .dot.dropdown-list
+      display flex
+
+
+.dot.dropdown
+  & .dot.dropdown-toggle
+    fill var(--dot-color-whiteShoulders)
+    cursor pointer
+    height 3rem
+    width 3rem
+    padding 0
+    &:hover
+      fill var(--dot-color-whiteShoulders)
+    & svg
+      pointer-events none
       height 3rem
+      width 3rem
