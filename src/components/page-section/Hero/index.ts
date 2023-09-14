@@ -1,5 +1,8 @@
 import translate from '../../../lib/translate';
 import { Link } from '../../navigation/Link';
+
+import { CountDown } from './CountDown';
+
 import './styles/hero.styl';
 
 const html = String.raw;
@@ -21,7 +24,9 @@ const Hero = async () => {
   })}
     </div>-->
     </div>
-  </div>`;
+
+    ${CountDown()}
+  `;
 };
 
 export default Hero;
