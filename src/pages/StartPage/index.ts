@@ -1,16 +1,43 @@
+// import { addOnAfterAppRender } from '../../lib/spa';
+import translate from '../../lib/translate';
+
 import Hero from '../../components/page-section/Hero';
 import { Link } from '../../components/navigation/Link';
-
 import { EditorialBanner } from '../../components/page-section/EditorialBanner';
 import { Meantime } from '../../components/content/Meantime';
 
-import arrowIcon from '../../../public/images/icons/ui/fi-ts-arrow-small-right.svg';
-
 import '../../components/action/Button/styles/button.styl';
+
+import arrowIcon from '../../../public/images/icons/ui/fi-ts-arrow-small-right.svg';
 
 const html = String.raw;
 
 export const StartPage = async () => {
+  // addOnAfterAppRender(async () => {
+  //   const response = await fetch(
+  //     // 'https://sessionize.com/api/v2/bxgh3fps/view/SpeakerWall'
+  //     'https://sessionize.com/api/v2/2l4eynf3/view/SpeakerWall'
+  //   );
+  //   const data = await response.json();
+  //   const speakerWallElement = document.querySelector('#speaker-wall');
+
+  //   let speakerHTML = '';
+
+  //   if (speakerWallElement) {
+  //     speakerHTML = data
+  //       .map((speaker) => {
+  //         return html`<div
+  //           class="dot speaker"
+  //           style="background-image:url(${speaker.profilePicture});"
+  //           role="presentation"
+  //         ></div>`;
+  //       })
+  //       .join('\n');
+
+  //     speakerWallElement.innerHTML = speakerHTML;
+  //   }
+  // });
+
   return html`
     <section class="dot section">
       <div class="dot container">${await Hero()}</div>
