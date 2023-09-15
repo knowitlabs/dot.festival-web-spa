@@ -1,4 +1,4 @@
-import arrowCircleDownIcon from '../../../../public/images/icons/ui/fi-ts-arrow-alt-circle-down.svg';
+import arrowCircleDownIcon from '../../../assets/images/icons/ui/fi-ts-arrow-alt-circle-down.svg';
 
 const html = String.raw;
 

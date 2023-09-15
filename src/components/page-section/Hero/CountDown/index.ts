@@ -1,4 +1,4 @@
-import { addOnAfterAppRender } from '../../../../lib/spa';
+import { addOnAfterAppRender } from '../../../../config/spa';
 import { coundown } from './lib/countdown';
 import './styles/countdown.styl';
 

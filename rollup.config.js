@@ -7,10 +7,11 @@ import terser from '@rollup/plugin-terser';
 import svg from 'rollup-plugin-svg-import';
 import commonjs from '@rollup/plugin-commonjs';
 // import { generateImageSizes } from 'rollup-plugin-generate-image-sizes';
+import analyze from 'rollup-plugin-analyzer';
 
 export default [
   {
-    input: ['src/index.ts'],
+    input: ['src/main.ts'],
     external: (id) => {
       if (id.includes('history')) return true;
 
@@ -47,7 +48,10 @@ export default [
         sourceMap: false,
         typescript
       }),
-      terser()
+      terser(),
+      analyze({
+        summaryOnly: true
+      })
     ]
   }
 ];

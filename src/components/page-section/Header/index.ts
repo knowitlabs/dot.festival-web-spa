@@ -6,8 +6,8 @@ import translate from '../../../lib/translate';
 
 import './styles/header.styl';
 
-import logo from '../../../../public/images/logo/logo.svg';
-import earthIcon from '../../../../public/images/icons/ui/fi-ts-earth-europa.svg';
+import logo from '../../../assets/images/logo/logo.svg';
+import earthIcon from '../../../assets/images/icons/ui/fi-ts-earth-europa.svg';
 // import { cx } from '@knowitlabs/cx';
 
 const html = String.raw;

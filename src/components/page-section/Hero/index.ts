@@ -6,13 +6,13 @@ import { CountDown } from './CountDown';
 import './styles/hero.styl';
 
 const html = String.raw;
-const Hero = async () => {
+const Hero = () => {
   return html`
     <div class="dot hero">
       <img
         class="dot image"
         role="presentation"
-        src="images/8dddb761187601b14ad9d911f36d9fba.png"
+        src="images/illustrations/8dddb761187601b14ad9d911f36d9fba.png"
       />
       <h1 class="dot">${translate('title')}</h1>
       <p class="dot lead">${translate('description')}</p>

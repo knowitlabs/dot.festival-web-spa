@@ -1,5 +1,6 @@
-import logo from '../../../../public/images/logo/knowit-logo.svg';
-import { Emissions } from '../../content/Emissions';
+import { Emissions } from '../../../features/Emissions';
+
+import logo from '../../../assets/images/logo/knowit-logo.svg';
 
 import './styles/footer.styl';
 

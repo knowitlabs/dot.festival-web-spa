@@ -1,14 +1,14 @@
 import i18next from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-import enTranslation from '../locales/en/translations.json';
-import deTranslation from '../locales/de/translations.json';
-import svTranslation from '../locales/sv/translations.json';
-import daTranslation from '../locales/da/translations.json';
-import fiTranslation from '../locales/fi/translations.json';
-import plTranslation from '../locales/pl/translations.json';
-import ukTranslation from '../locales/uk/translations.json';
-import noTranslation from '../locales/no/translations.json';
+import enTranslation from '../assets/locales/en/translations.json';
+import deTranslation from '../assets/locales/de/translations.json';
+import svTranslation from '../assets/locales/sv/translations.json';
+import daTranslation from '../assets/locales/da/translations.json';
+import fiTranslation from '../assets/locales/fi/translations.json';
+import plTranslation from '../assets/locales/pl/translations.json';
+import ukTranslation from '../assets/locales/uk/translations.json';
+import noTranslation from '../assets/locales/no/translations.json';
 
 const systemLocale = Intl.DateTimeFormat().resolvedOptions().locale;
 

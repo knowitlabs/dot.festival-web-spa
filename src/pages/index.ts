@@ -8,6 +8,6 @@ export * from './CodeOfConductPage';
 
 export * from './RegisterPage';
 
-export * from './RegisterPage/RegisterReceiptPage';
+export * from './RegisterReceiptPage';
 
 export * from './ErrorPage';

@@ -1,8 +1,8 @@
 import { cx } from '@knowitlabs/cx';
 
-import { KIFunctionType } from '../../../@types/module/function';
+import { KIFunctionType } from '../../../types/module/function';
 
-import { addOnClick } from '../../../lib/spa';
+import { addOnClick } from '../../../config/spa';
 
 export type KIButtonPropsType = {
   tabindex?: number;
