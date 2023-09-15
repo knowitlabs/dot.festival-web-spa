@@ -1,6 +1,6 @@
 const html = String.raw;
 
-export const CodeOfConductPage = async () => {
+export const CodeOfConductPage = () => {
   return html`<section class="dot section">
     <div class="dot container">
       <h1 class="dot">Conference Code of Conduct</h1>

@@ -3,7 +3,7 @@ import './styles/about.styl';
 
 const html = String.raw;
 
-export const AboutPage = async () => {
+export const AboutPage = () => {
   return html`<section class="dot section">
     <div class="dot container">
       <p class="dot">

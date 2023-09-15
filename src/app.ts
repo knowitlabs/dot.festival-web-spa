@@ -34,9 +34,51 @@ const App = async (match: KIRouterMatchType, params: unknown) => {
   addOnAfterAppRender(() => {
     dotter();
   });
-  console.log(PAGES, _page);
+  console.log(_page);
 
-  const content = await PAGES[_page]({ params: _params });
+  let content = '';
+
+  if (_page === 'AboutPage') {
+    const { AboutPage: currentPage } = await import('./pages/AboutPage');
+
+    content = currentPage();
+  } else if (_page === 'StartPage') {
+    const { StartPage: currentPage } = await import('./pages/StartPage');
+
+    content = currentPage();
+  } else if (_page === 'PageNotFoundPage') {
+    const { PageNotFoundPage: currentPage } = await import(
+      './pages/PageNotFoundPage'
+    );
+
+    content = currentPage();
+  } else if (_page === 'CodeOfConductPage') {
+    const { CodeOfConductPage: currentPage } = await import(
+      './pages/CodeOfConductPage'
+    );
+
+    content = currentPage();
+  } else if (_page === 'RegisterPage') {
+    const { RegisterPage: currentPage } = await import('./pages/RegisterPage');
+
+    content = currentPage();
+  } else if (_page === 'RegisterReceiptPage') {
+    const { RegisterReceiptPage: currentPage } = await import(
+      './pages/RegisterReceiptPage'
+    );
+
+    content = currentPage();
+  } else if (_page === 'ErrorPage') {
+    const { ErrorPage: currentPage } = await import('./pages/ErrorPage');
+
+    content = currentPage({ params: _params });
+  } else {
+    const { PageNotFoundPage: currentPage } = await import(
+      './pages/PageNotFoundPage'
+    );
+
+    content = currentPage();
+  }
 
   return html`${await Header()}
     <main class="dot">${content}</main>
