@@ -8,7 +8,5 @@ import { Section } from '../../components/layout/Section';
 const html = String.raw;
 
 export const StartPage = () => {
-  return html`
-    ${Section(Container(Hero()))} ${Section(Container(Meantime()))}
-  `;
+  return html` ${Section(Container(Hero()))} `;
 };
