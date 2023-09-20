@@ -28,6 +28,8 @@ export const potentialMatchesMapper = (
         (q.p || '') +
         (q.q ? '?' + q.q : '') +
         window.location.hash;
+
+      history.replaceState(null, '', pathName);
     }
   }
 
