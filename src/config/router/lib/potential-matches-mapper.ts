@@ -4,8 +4,7 @@ export const potentialMatchesMapper = (
   route: KIRouteType
 ): KIRouterMatchType => {
   // javascript, i'm looking at you!!
-  const pathName =
-    decodeURI(location.pathname.replace('/dot.festival-web-spa', '')) + '';
+  const pathName = decodeURI(location.pathname) + '';
 
   return {
     route: route,

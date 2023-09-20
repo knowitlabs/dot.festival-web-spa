@@ -23,7 +23,5 @@ export const getEmissions = () => {
   const greenHost = true; // Is the data transferred from a green host?
   const estimatedCO2 = emissions.perByte(bytesSent, greenHost).toFixed(3); // We use toFixed(3) here to set the result to 3 decimal places.
 
-  console.dir({ bytesSent, estimatedCO2 });
-
   return estimatedCO2;
 };

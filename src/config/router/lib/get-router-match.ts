@@ -12,8 +12,7 @@ export const getRouterMatch = (routes: KIRoutesType): KIRouterMatchType => {
 
   if (!match) {
     // javascript, i'm looking at you!!
-    const pathName =
-      decodeURI(location.pathname.replace('/dot.festival-web-spa', '')) + '';
+    const pathName = decodeURI(location.pathname) + '';
 
     match = {
       route: { path: '/404', page: 'PageNotFoundPage', name: 'Page not found' },

@@ -43,9 +43,6 @@ export const spa = (() => {
   }
 
   const stateHooks: Record<string, KIStateContextType> = {};
-
-  console.log('adsadsadsadsadsadsa');
-
   const effectHooks: unknown[] = [];
 
   let _templateCallback;
@@ -382,8 +379,6 @@ export const spa = (() => {
       throw new Error('Missing parameter `context` for `useState`');
     }
 
-    console.log('stateHooks', stateHooks, context);
-
     if (!stateHooks[context]) {
       stateHooks[context] = { state: [], index: 0 };
     }
@@ -400,23 +395,10 @@ export const spa = (() => {
         stateHooks[context].state[_contextStateIndex] = newValue;
       }
 
-      console.log(
-        'newValue',
-        newValue,
-        _contextStateIndex,
-        stateHooks[context]
-      );
       render();
     };
 
     stateHooks[context].index++;
-
-    console.log(
-      stateHooks,
-      stateHooks[context],
-      stateHooks[context].state,
-      stateHooks[context].index
-    );
 
     return [state, setState];
   };
@@ -433,8 +415,6 @@ export const spa = (() => {
         (dep: unknown, i: number) => !Object.is(dep, oldDependencies[i])
       );
     }
-
-    console.log(dependencyArray, effectHooks[effectIndex]);
 
     effectHooks[effectIndex] = dependencyArray;
     effectIndex++;
