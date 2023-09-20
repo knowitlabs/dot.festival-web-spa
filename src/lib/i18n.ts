@@ -13,7 +13,7 @@ import noTranslation from '../assets/locales/no/translations.json';
 const systemLocale = Intl.DateTimeFormat().resolvedOptions().locale;
 
 i18next.use(LanguageDetector).init({
-  debug: true,
+  debug: false,
   fallbackLng: 'en',
   resources: {
     en: {
