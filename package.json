@@ -53,7 +53,7 @@
     "prettier-eslint": "^15.0.1",
     "rollup": "^3.22.0",
     "rollup-plugin-analyzer": "^4.0.0",
-    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-dts": "^6.0.2",
     "rollup-plugin-generate-image-sizes": "^0.0.20",
     "rollup-plugin-node-externals": "^6.0.1",
     "rollup-plugin-svg-import": "^2.0.0",
