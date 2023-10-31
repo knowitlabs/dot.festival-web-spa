@@ -10,7 +10,7 @@ import { throttle } from './throttle';
 const getRandomInt = (min, max) =>
   Math.floor(Math.random() * (max - min + 1) + min);
 const xmlns = 'http://www.w3.org/2000/svg';
-const drawDots = (e, dots = 50, element: HTMLElement | null = null) => {
+const drawDots = (e, dots = 25, element: HTMLElement | null = null) => {
   element = element || document.querySelector('body');
 
   if (!element) return;

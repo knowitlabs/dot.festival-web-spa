@@ -1,23 +1,18 @@
 .dot.hero
   position relative
-  display grid
-  grid-template-areas "hero-image"\
-                      "hero-title"\
-                      "hero-lead"\
-                      "hero-actions"
-  @media screen and (min-width: 1024px)
-    grid-template-areas "hero-image hero-title"\
-                        "hero-image hero-title"\
-                        "hero-image hero-lead"\
-                        ". hero-actions"
+  display flex
+  align-items center
+  justify-content center
 
 
 .dot.hero
   & .dot.image
     grid-area hero-image
     object-fit contain
-    max-height 50vh
+    max-height 40vh
     max-width 100%
+    margin-bottom 4rem
+
     // @media screen and (min-width: 640px)
 
 .dot.hero

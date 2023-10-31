@@ -63,12 +63,12 @@ const Header = async () => {
       <div class="dot container">
         ${Link({ to: '/', content: logo, className: 'logo' })}
         <div class="dot global-navigation">
-          ${Link({
+          <!--  ${Link({
     to: 'https://sessionize.com/dot-festival-2024-oslo/',
     server: true,
     className: 'button primary cfp',
     content: translate('callForSpeakers')
-  })}
+  })}-->
           <div class="dot" style="display:none;">
             <button
               class="dot dropdown-toggle button"
