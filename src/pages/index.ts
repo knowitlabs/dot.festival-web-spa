@@ -4,7 +4,11 @@ export * from './StartPage';
 
 export * from './PageNotFoundPage';
 
-export * from './CodeOfConductPage';
+export * from './PracticalitiesPage';
+
+export * from './SpeakersPage';
+
+export * from './ProgramPage';
 
 export * from './RegisterPage';
 

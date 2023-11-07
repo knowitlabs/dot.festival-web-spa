@@ -52,9 +52,17 @@ const App = async (match: KIRouterMatchType, params: unknown) => {
     );
 
     content = currentPage();
-  } else if (_page === 'CodeOfConductPage') {
-    const { CodeOfConductPage: currentPage } = await import(
-      './pages/CodeOfConductPage'
+  } else if (_page === 'ProgramPage') {
+    const { ProgramPage: currentPage } = await import('./pages/ProgramPage');
+
+    content = currentPage();
+  } else if (_page === 'SpeakersPage') {
+    const { SpeakersPage: currentPage } = await import('./pages/SpeakersPage');
+
+    content = currentPage();
+  } else if (_page === 'PracticalitiesPage') {
+    const { PracticalitiesPage: currentPage } = await import(
+      './pages/PracticalitiesPage'
     );
 
     content = currentPage();

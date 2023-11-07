@@ -16,9 +16,27 @@ export const routes: KIRouteType[] = [
     regex: /^\/register$/
   },
   {
-    path: '/code-of-conduct',
-    page: 'CodeOfConductPage',
-    name: 'Code of Conduct',
-    regex: /^\/code-of-conduct$/
+    path: '/program',
+    page: 'ProgramPage',
+    name: 'Program',
+    regex: /^\/program$/
+  },
+  {
+    path: '/speakers',
+    page: 'SpeakersPage',
+    name: 'Speakers',
+    regex: /^\/speakers$/
+  },
+  {
+    path: '/practicalities',
+    page: 'PracticalitiesPage',
+    name: 'Practicalities',
+    regex: /^\/practicalities$/
+  },
+  {
+    path: '/register',
+    page: 'RegisterPage',
+    name: 'Register',
+    regex: /^\/register$/
   }
 ];

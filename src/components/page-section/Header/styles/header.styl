@@ -1,5 +1,6 @@
 .dot.header
   position relative
+  padding 1.25rem
   @media screen and (min-width: 1024px)
     padding-bottom 5rem
 
@@ -47,6 +48,18 @@
   display flex
   align-items center
   justify-content flex-end
+  grid-gap 1rem
+
+  & .button:not(.cfp)
+    padding-left 0
+    padding-right 0
+    width auto
+
+    &:hover
+      background-color transparent
+      color var(--dot-color-hyperGreen)
+      border-color transparent
+
 
 
 .dot.dropdown
