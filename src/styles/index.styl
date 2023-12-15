@@ -93,11 +93,12 @@
     font-size 1.125rem
     line-height 1.5rem
 
-.dot.speaker-wall
+.dot.speaker-wall-content
   display flex
   flex-wrap wrap
-  justify-content space-around
-  grid-gap 5rem
+  justify-content center
+  align-items center
+  grid-gap 2.5rem 2.5rem
 
 .dot.speaker
   border-radius 50%
@@ -108,21 +109,19 @@
   filter grayscale(1)
   flex-shrink 0
   flex-grow 0
+  aspect-ratio: 1/1
   height 200px
-  width 200px
   @media screen and (min-width: 1024px)
     height 296px
-  width 296px
   @media screen and (min-width: 1200px)
     height 350px
-    width 350px
   @media screen and (min-width: 1440px)
     height 415px
-    width 415px
 
 .dot.speaker-wall-title
   max-width 23ch
-  margin-bottom 3rem
+  margin-bottom 10rem
+  margin-top 7rem
   font-size 2rem
   text-align left
   font-family var(--dot-font-family-default)

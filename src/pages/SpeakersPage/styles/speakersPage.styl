@@ -1,0 +1,54 @@
+.dot.speakers
+  display flex
+  flex-direction column
+  grid-gap 4rem 4rem
+
+
+.dot.speaker-card
+  position relative
+  display grid
+  grid-gap 2rem 2rem
+  grid-template-columns 200px 1fr
+  grid-template-areas "primary secondary"
+  @media screen and (min-width: 1024px)
+    grid-template-columns 296px 1fr
+  @media screen and (min-width: 1200px)
+    grid-template-columns 296px 1fr
+  @media screen and (min-width: 1440px)
+    grid-template-columns 296px 1fr
+
+.dot.speaker-card
+  & .dot.primary
+    grid-area: "primary"
+    display flex
+    flex-direction column
+
+
+    & .dot.name
+      font-size 2rem
+      text-align center
+      display block
+      margin-bottom 1rem
+    & .dot.tagLine
+      font-size 1.5rem
+      text-align center
+      display block
+      color grey;
+
+  & .dot.secondary
+    grid-area: "secondary"
+
+.dot.speaker-card
+  & .dot.speaker
+    margin-bottom 2rem
+    width 200px
+    height 200px
+    @media screen and (min-width: 1024px)
+      width 296px
+      height 296px
+    @media screen and (min-width: 1200px)
+      width 296px
+      height 296px
+    @media screen and (min-width: 1440px)
+      width 296px
+      height 296px

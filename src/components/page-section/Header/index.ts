@@ -63,12 +63,12 @@ const Header = async () => {
       <div class="dot container">
         ${Link({ to: '/', content: logo, className: 'logo' })}
         <div class="dot global-navigation">
-          <span
+          <!--<span
             class="dot"
             style="font-size:1.5rem; line-height: 1.33; font-weight: 500;"
             >More coming soon!</span
-          >
-          <!--  ${Link({
+          >-->
+          ${Link({
     to: '/about',
     className: 'button',
     content: 'About'
@@ -94,6 +94,7 @@ const Header = async () => {
     className: 'button primary cfp',
     content: translate('callForSpeakers')
   })}
+          <!--
           <div class="dot" style="display:none;">
             <button
               class="dot dropdown-toggle button"

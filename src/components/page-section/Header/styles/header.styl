@@ -45,10 +45,12 @@
 .dot.global-navigation
   margin-left auto
   height 3rem
-  display flex
+  display none
   align-items center
   justify-content flex-end
   grid-gap 1rem
+  @media screen and (min-width: 1024px)
+    display flex
 
   & .button:not(.cfp)
     padding-left 0

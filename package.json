@@ -17,7 +17,8 @@
     "build": "rollup -c rollup.config.js",
     "postbuild": "bash -c 'mv -f ./dist/*.{js,map} ./dist/js'",
     "build:watch": "rollup -c rollup.config.js -w",
-    "commit": "git cz"
+    "commit": "git cz",
+    "dev": "npx browser-sync start -s \"dist\" --files \"dist/*.*\"  --single"
   },
   "engines": {
     "node": ">=18.16.0",

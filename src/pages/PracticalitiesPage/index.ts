@@ -76,9 +76,9 @@ We recommend downloading the app VY or Ruter, for timetables and tickets. You ca
 <p class="dot">
 Visit websites for information here:
 
-<a href="https://avinor.no/flyplass/oslo/til-og-fra-flyplassen/tog-buss-og-taxi/tog" rel="noopener noreferrer" target="_blank">Avinor</a> (To and from airport)
-<a href="https://ruter.no" rel="noopener noreferrer" target="_blank">Ruter</a> (To and from airport and in Oslo)
-<a href="https://entur.no" rel="noopener noreferrer" target="_blank">Entur</a> (To and from airport and in Oslo)
+<a class="dot" href="https://avinor.no/flyplass/oslo/til-og-fra-flyplassen/tog-buss-og-taxi/tog" rel="noopener noreferrer" target="_blank">Avinor</a> (To and from airport)
+<a class="dot" href="https://ruter.no" rel="noopener noreferrer" target="_blank">Ruter</a> (To and from airport and in Oslo)
+<a class="dot" href="https://entur.no" rel="noopener noreferrer" target="_blank">Entur</a> (To and from airport and in Oslo)
       </p>
     </div>
   </section>`;
