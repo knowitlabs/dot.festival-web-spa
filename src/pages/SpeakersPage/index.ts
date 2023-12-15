@@ -27,6 +27,15 @@ export const SpeakersPage = () => {
             links
           } = speaker;
 
+          let fixedBio = '<p class="dot lead">' + bio + '</p>';
+
+          fixedBio = fixedBio
+            .replace(/\r\n\r\n/g, '</p><p class="dot">')
+            .replace(/\n\n/g, '</p><p class="dot">');
+          fixedBio = fixedBio
+            .replace(/\r\n/g, '</p><p class="dot">')
+            .replace(/\n/g, '</p><p class="dot">');
+
           return html`<div class="dot speaker-card">
             <div class="dot primary">
               <div
@@ -38,7 +47,7 @@ export const SpeakersPage = () => {
               <span class="dot tagLine"> ${tagLine} </span>
             </div>
             <div class="dot secondary">
-              <div class="dot bio">${bio}</div>
+              <div class="dot bio">${fixedBio}</div>
             </div>
           </div>`;
         })
