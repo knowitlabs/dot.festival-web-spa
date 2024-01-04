@@ -24,10 +24,20 @@ export const SpeakersPage = () => {
             fullName: name,
             bio,
             tagLine,
-            links
+            links,
+            sessions
           } = speaker;
 
           let fixedBio = '<p class="dot lead">' + bio + '</p>';
+
+          const fixedSessions = `
+          <ul class="dot sessions-list">
+          ${sessions
+    .map((session) => {
+      return html`${session.name}`;
+    })
+    .join('\n')}
+          </ul>`;
 
           fixedBio = fixedBio
             .replace(/\r\n\r\n/g, '</p><p class="dot">')
@@ -48,6 +58,12 @@ export const SpeakersPage = () => {
             </div>
             <div class="dot secondary">
               <div class="dot bio">${fixedBio}</div>
+              <div class="dot sessions">
+                <span class="dot sessions-title">
+                  ${name} is holding this/these sessions:
+                </span>
+                ${fixedSessions}
+              </div>
             </div>
           </div>`;
         })
