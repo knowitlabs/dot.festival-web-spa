@@ -1,0 +1,139 @@
+.dot
+  #sessionize .sz-cssgrid__track-label
+    text-transform uppercase
+  #sessionize .sz-session__room[data-roomid="46682"]
+    border-bottom 1rem solid red
+  #sessionize.sessionize-wrapper .sz-session__tags li, #sessionize.sessionize-wrapper .sz-speaker__tags li
+    height max-content
+  #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card .sz-session__tags
+    height auto
+    display flex
+    justify-content flex-start
+    margin 0
+    grid-gap 0.5rem 0.5rem
+  & .sz-cssgrid__track-label.sz-room.sz-room--45118
+    border-bottom 1rem solid black
+  & .sz-cssgrid__track-label.sz-room.sz-room--46682
+    border-bottom 1rem solid red
+  & .sz-cssgrid__track-label.sz-room.sz-room--37014
+    border-bottom 1rem solid green
+  & .sz-cssgrid__track-label.sz-room.sz-room--37015
+    border-bottom 1rem solid blue
+  & .sz-cssgrid__track-label.sz-room.sz-room--46694
+    border-bottom 1rem solid white
+  & #sessionize.sessionize-wrapper .sz-tabs
+    display flex
+    justify-content flex-start
+    align-items center
+
+    & .sz-tabs__link
+      transition all .2s cubic-bezier(.4,0,.2,1)
+      text-decoration none
+      border none
+      border 0.125rem solid transparent !important
+      min-width 3rem
+      height 3rem
+      max-width 24ch
+      flex-grow 0
+      flex-shrink 0
+      border-radius 3rem
+      display flex
+      align-items center
+      justify-content center
+      background-color var(--dot-color-black)
+      color var(--dot-color-white)
+      font-family var(--dot-font-family-default)
+      box-shadow none
+      font-size 1.25rem
+      line-height 120%
+      font-weight 600
+      padding 1rem 2rem
+
+      &:hover
+        background-color transparent
+        color var(--dot-color-hyperGreen)
+        border-color currentColor !important
+
+      &.sz-tab-container--active
+        background-color var(--dot-color-white)
+        color var(--dot-color-black)
+
+        &:hover
+          background-color var(--dot-color-black)
+          color var(--dot-color-white)
+          border-color currentColor !important
+
+  & #sessionize.sessionize-wrapper .sz-session__time
+    font-size 1rem
+    line-height 120%
+    opacity 1
+  & #sessionize.sessionize-wrapper .sz-session__speakers li
+    font-size 1rem
+    line-height 120%
+  & .sz-powered-by
+    display none !important
+  & #sessionize.sessionize-wrapper .sz-session__title
+    font-size 1.25rem
+    line-height 120%
+  & #sessionize.sessionize-wrapper
+    font-size 1.125rem
+    line-height 1.75rem
+    font-family var(--dot-font-family-default)
+  & #sessionize.sessionize-wrapper .sz-modal
+    width 90vw
+    max-width 720px
+  & #sessionize.sessionize-wrapper .sz-session
+    z-index 9
+
+    &:hover
+      z-index 9
+
+    &.sz-session--service
+      z-index 10
+      &:hover
+        z-index 10
+
+  & #sessionize.sessionize-wrapper .sz-session.sz-session--full .sz-session__description
+    font-size 1.125rem
+    line-height 1.75rem
+    font-family var(--dot-font-family-default)
+  & #sessionize.sessionize-wrapper .sz-modal-overlay
+    background-color rgba(0, 0, 0, 0.55)
+  & #sessionize.sessionize-wrapper .sz-cssgrid
+    grid-gap 1rem 1rem
+  & #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card
+    color var(--dot-color-whiteShoulders)
+    background-color #000000
+    border 1pt solid white
+    grid-gap 1rem 1rem
+    position relative
+    border-radius 0
+    box-shadow none
+
+    &::after
+      content none
+
+    &:hover
+      background-color white
+      border-color black
+      color black
+
+    & [data-tagid="192699"]
+      background-color #FF00FF
+      color var(--dot-color-black)
+
+    & [data-tagid="192698"]
+      background-color #00FFFF
+      color var(--dot-color-black)
+
+    & [data-tagid="192701"]
+      background-color #FFFF00
+      color var(--dot-color-black)
+
+    & [data-tagid="192700"]
+      background-color var(--dot-color-hyperGreen)
+      color var(--dot-color-black)
+
+
+
+
