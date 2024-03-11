@@ -48,7 +48,7 @@ export default [
         sourceMap: false,
         typescript
       }),
-      terser(),
+      //terser(),
       analyze({
         summaryOnly: true
       })
