@@ -4,14 +4,31 @@ import { Section } from '../../components/layout/Section';
 import { addOnAfterAppRender, addOnClick, useState } from '../../config/spa';
 
 import './styles/program.styl';
+import { getSessionizeData } from './lib/get-sessionize-data';
+import { TimeSlots } from './components/TimeSlots';
+import { TrackSlots } from './components/TrackSlots';
+import { Sessions } from './components/Sessions';
+import { SessionDialogs } from './components/SessionDialogs';
 
 const html = String.raw;
+const handleDialogClose = (e) => {
+  if (e.key === 'Escape') {
+    const openDialogs = document.querySelectorAll('dialog[open]');
+
+    if (openDialogs && openDialogs.length) {
+      openDialogs.forEach((dialog: HTMLDialogElement) => dialog.close());
+    }
+  }
+};
 
 export const ProgramPage = async () => {
+  document.removeEventListener('keydown', handleDialogClose);
+  document.addEventListener('keydown', handleDialogClose);
+
   const [activeTab, setActiveTab] = useState('tab-1', 'program');
 
   addOnAfterAppRender(() => {
-    const tabElements = document.querySelectorAll('.sz-tabs .sz-tabs__link');
+    const tabElements = document.querySelectorAll('.dot.tabs .dot.tab-link');
 
     let tabIndex = 1;
 
@@ -24,7 +41,7 @@ export const ProgramPage = async () => {
       );
 
       if (tabSectionElement) {
-        tabSectionElement.classList.remove('sz-tab-container--active');
+        tabSectionElement.classList.remove('is-active');
       }
 
       tabElement.setAttribute('id', id);
@@ -42,20 +59,40 @@ export const ProgramPage = async () => {
     if (activeTabElement) {
       const href = activeTabElement.getAttribute('href') as string;
 
-      activeTabElement.classList.add('sz-tab-container--active');
+      activeTabElement.classList.add('is-active');
 
       const activeTabSectionElement = document.querySelector(href);
 
       if (activeTabSectionElement) {
-        activeTabSectionElement.classList.add('sz-tab-container--active');
+        activeTabSectionElement.classList.add('is-active');
       }
     }
   });
 
-  const response = await fetch(
-    'https://sessionize.com/api/v2/owci0trj/view/GridSmart'
-  );
-  const sessionizeHTML = await response.text();
+  const { schedule, speakers } = await getSessionizeData();
+  const sessionizeHTML = html`
+    <ul class="dot tabs">
+      <li class="dot tab-item">
+        <a class="dot tab-link button" href="#day-1" id="tab-1">Friday</a>
+      </li>
+      <li class="dot tab-item">
+        <a class="dot tab-link button" href="#day-2" id="tab-2">Saturday</a>
+      </li>
+    </ul>
+    ${schedule
+    .map((day, index) => {
+      const { rooms } = day;
 
-  return html`${Section(Container(sessionizeHTML, 'schedule'))}`;
+      return html`<div class="dot tab-container" id="day-${index + 1}">
+          <div class="dot schedule">
+            ${TimeSlots()} ${TrackSlots({ rooms })}
+            ${Sessions({ rooms, speakers })}
+          </div>
+          ${SessionDialogs({ rooms, speakers })}
+        </div>`;
+    })
+    .join('\n')}
+  `;
+
+  return html`${Section(Container(sessionizeHTML, 'program'))}`;
 };

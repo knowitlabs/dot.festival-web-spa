@@ -100,23 +100,25 @@
   align-items center
   grid-gap 2.5rem 2.5rem
 
-.dot.speaker
-  border-radius 50%
-  overflow hidden
-  background-position center center
-  background-size cover
-  background-repeat no-repeat
-  filter grayscale(1)
-  flex-shrink 0
-  flex-grow 0
-  aspect-ratio: 1/1
-  height 200px
-  @media screen and (min-width: 1024px)
-    height 296px
-  @media screen and (min-width: 1200px)
-    height 350px
-  @media screen and (min-width: 1440px)
-    height 415px
+.dot.speaker-card
+
+  & .dot.speaker
+    border-radius 50%
+    overflow hidden
+    background-position center center
+    background-size cover
+    background-repeat no-repeat
+    filter grayscale(1)
+    flex-shrink 0
+    flex-grow 0
+    aspect-ratio: 1/1
+    height 200px
+    @media screen and (min-width: 1024px)
+      height 296px
+    @media screen and (min-width: 1200px)
+      height 350px
+    @media screen and (min-width: 1440px)
+      height 415px
 
 .dot.speaker-wall-title
   max-width 23ch

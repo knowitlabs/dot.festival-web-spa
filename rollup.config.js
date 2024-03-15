@@ -48,10 +48,10 @@ export default [
         sourceMap: false,
         typescript
       }),
-      terser(),
-      analyze({
-        summaryOnly: true
-      })
+      terser()
+      // analyze({
+      //   summaryOnly: true
+      // })
     ]
   }
 ];

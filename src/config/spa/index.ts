@@ -350,7 +350,7 @@ export const spa = (() => {
   };
   // eslint-disable-next-line no-unused-vars
   const addOnKeydown = (id: string, callback: KIFunctionType) => {
-    keyupEventArray.push({ id, callback });
+    keydownEventArray.push({ id, callback });
   };
   // eslint-disable-next-line no-unused-vars
   const addOnChange = (id: string, callback: KIFunctionType) => {

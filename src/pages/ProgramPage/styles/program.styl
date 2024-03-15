@@ -1,140 +1,469 @@
-.dot
-  #sessionize .sz-cssgrid__track-label
-    text-transform uppercase
-  #sessionize .sz-session__room[data-roomid="46682"]
-    border-bottom 1rem solid red
-  #sessionize.sessionize-wrapper .sz-session__tags li, #sessionize.sessionize-wrapper .sz-speaker__tags li
-    height max-content
-  #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card .sz-session__tags
-    height auto
+.dot.track-slot
+  font-size 1.25rem
+  line-height 120%
+  font-weight 600
+  position sticky
+  top 0
+  background-color var(--dot-color-black)
+  z-index 20
+  display none
+  font-size 18px
+  @media screen and (min-width: 1024px)
+    line-height 120%
+    font-weight 600
+    margin-right -1rem
+    padding 1rem
+    padding-left 0
+    height 6rem
     display flex
     justify-content flex-start
-    margin 0
-    grid-gap 0.5rem 0.5rem
-    flex-wrap wrap
-  & .sz-cssgrid__track-label.sz-room.sz-room--45118
-    border-bottom 1rem solid black
-  & .sz-cssgrid__track-label.sz-room.sz-room--46682
-    border-bottom 1rem solid red
-  & .sz-cssgrid__track-label.sz-room.sz-room--37014
-    border-bottom 1rem solid green
-  & .sz-cssgrid__track-label.sz-room.sz-room--37015
-    border-bottom 1rem solid blue
-  & .sz-cssgrid__track-label.sz-room.sz-room--46694
-    border-bottom 1rem solid white
-  & #sessionize.sessionize-wrapper .sz-tabs
+    align-items flex-end
+  @media screen and (min-width: 1200px)
+    font-size 1.25rem
+    margin-right -2rem
+    padding 2rem
+    padding-left 0
+  @media screen and (min-width: 1440px)
+    font-size 28px
+  @media screen and (min-width: 1920px)
+    font-size 38px
+
+.dot.track-slot[class*="track-"]::after
+  content ""
+  position absolute
+  top calc(100% - 1rem)
+  width auto
+  left 0
+  right 1rem
+  height 1rem
+  @media screen and (min-width: 1200px)
+    right 2rem
+
+.dot.track-slot
+  &.track-1
+    &::after
+      background-color red
+  &.track-2
+    &::after
+      background-color green
+  &.track-3
+    &::after
+      background-color blue
+  &.track-4
+    &::after
+      background-color white
+  &.track-5
+    &::after
+      background-color white
+
+.dot.lane-slot
+  position sticky
+  top 1rem
+  display none
+  @media screen and (min-width: 1024px)
+    display block
+  &.track-1
+    &::after
+      background-image radial-gradient(circle at 1px 1px, red 1px, transparent 0)
+  &.track-2
+    &::after
+      background-image radial-gradient(circle at 1px 1px, green 1px, transparent 0)
+  &.track-3
+    &::after
+      background-image radial-gradient(circle at 1px 1px, blue 1px, transparent 0)
+  &.track-4
+    &::after
+      background-image radial-gradient(circle at 1px 1px, white 1px, transparent 0)
+  &.track-5
+    &::after
+      background-image radial-gradient(circle at 1px 1px, white 1px, transparent 0)
+
+
+.dot.time-slot
+  font-size 38px
+  line-height 50px
+  font-weight 600
+  display none
+  @media screen and (min-width: 1024px)
+    grid-column times
+    display block
+    font-size 24px
+    line-height 120%
+  @media screen and (min-width: 1440px)
+    font-size 38px
+    line-height 50px
+
+
+.dot.session
+  border 1px solid currentColor
+  color var(--dot-color-whiteShoulders)
+  background-color black
+  position relative
+  width 100%
+  @media screen and (min-width: 1024px)
+    min-width 10rem
+    border 1pt solid currentColor
+  @media screen and (min-width: 1440px)
+    min-width 16rem
+  @media screen and (min-width: 1920px)
+    min-width 20rem
+  @media screen and (min-width: 2560px)
+    min-width 24rem
+
+
+.dot.track-all
+  display flex
+  justify-content center
+  align-items center
+  background #ccc
+  color #000
+  box-shadow none
+
+.dot.meta
+  color #555
+  display flex
+  flex-direction column
+  justify-content flex-start
+  align-items flex-start
+  z-index 10
+
+.dot.duration
+  display block
+  font-size 12px
+  line-height 120%
+  @media screen and (min-width: 1200px)
+    font-size 14px
+  @media screen and (min-width: 1440px)
+    font-size 1rem
+  @media screen and (min-width: 1920px)
+    font-size 1.25rem
+  @media screen and (min-width: 2560px)
+    font-size 1.5rem
+
+.dot.session-title
+  margin 0
+  display block
+  font-size 18px
+  @media screen and (min-width: 1440px)
+    font-size 28px
+  @media screen and (min-width: 1920px)
+    font-size 38px
+
+
+.dot.program .dot.speakers
+  display flex
+  flex-direction column
+  grid-gap 0.5rem 0.5rem
+
+  & .dot.speaker
     display flex
     justify-content flex-start
     align-items center
+    grid-gap 0.5rem 0.5rem
+    @media screen and (min-width: 1200px)
+      grid-gap 1rem 1rem
 
-    & .sz-tabs__link
-      transition all .2s cubic-bezier(.4,0,.2,1)
-      text-decoration none
-      border none
-      border 0.125rem solid transparent !important
-      min-width 3rem
-      height 3rem
-      max-width 24ch
-      flex-grow 0
-      flex-shrink 0
-      border-radius 3rem
-      display flex
-      align-items center
-      justify-content center
-      background-color var(--dot-color-black)
-      color var(--dot-color-white)
-      font-family var(--dot-font-family-default)
-      box-shadow none
-      font-size 1.25rem
-      line-height 120%
-      font-weight 600
-      padding 1rem 2rem
 
-      &:hover
-        background-color transparent
-        color var(--dot-color-hyperGreen)
-        border-color currentColor !important
+.dot.speaker-avatar
+  border-radius 50%
+  overflow hidden
+  background-position center center
+  background-size cover
+  background-repeat no-repeat
+  filter grayscale(1)
+  flex-shrink 0
+  flex-grow 0
+  height 2rem
+  width 2rem
+  aspect-ratio: 1/1
+  @media screen and (min-width: 1200px)
+    height 3rem
+    width 3rem
 
-      &.sz-tab-container--active
-        background-color var(--dot-color-white)
-        color var(--dot-color-black)
+.dot.lane-slot[class*="track-"]::after
+  display block
+  height calc(100vh - 400px)
+  left 0
+  right 0
+  top 100%
+  bottom auto
+  z-index 0
+  width auto
+  margin-left 0
+  margin-right 0
+  position absolute
+  background-size 10px 10px
+  background-position -1rem -1rem
+  overflow hidden
+  content none
+  @media screen and (min-width: 1024px)
+    content ""
 
-        &:hover
-          background-color var(--dot-color-black)
-          color var(--dot-color-white)
-          border-color currentColor !important
 
-  & #sessionize.sessionize-wrapper .sz-session__time
+
+.dot.schedule
+  grid-gap 1rem 1rem
+  background-color black
+  color white
+  display flex
+  flex-wrap wrap
+  @media screen and (min-width: 1024px)
+    display grid
+    grid-template-rows  \[tracks\] auto \
+                        \[lanes\] auto \
+                        \[time-1000\] auto \
+                        \[time-1005\] auto \
+                        \[time-1010\] auto \
+                        \[time-1015\] auto \
+                        \[time-1020\] auto \
+                        \[time-1025\] auto \
+                        \[time-1030\] auto \
+                        \[time-1035\] auto \
+                        \[time-1040\] auto \
+                        \[time-1045\] auto \
+                        \[time-1050\] auto \
+                        \[time-1055\] auto \
+                        \[time-1100\] auto \
+                        \[time-1105\] auto \
+                        \[time-1110\] auto \
+                        \[time-1115\] auto \
+                        \[time-1120\] auto \
+                        \[time-1125\] auto \
+                        \[time-1130\] auto \
+                        \[time-1135\] auto \
+                        \[time-1140\] auto \
+                        \[time-1145\] auto \
+                        \[time-1150\] auto \
+                        \[time-1155\] auto \
+                        \[time-1200\] auto \
+                        \[time-1205\] auto \
+                        \[time-1210\] auto \
+                        \[time-1215\] auto \
+                        \[time-1220\] auto \
+                        \[time-1225\] auto \
+                        \[time-1230\] auto \
+                        \[time-1235\] auto \
+                        \[time-1240\] auto \
+                        \[time-1245\] auto \
+                        \[time-1250\] auto \
+                        \[time-1255\] auto \
+                        \[time-1300\] auto \
+                        \[time-1305\] auto \
+                        \[time-1310\] auto \
+                        \[time-1315\] auto \
+                        \[time-1320\] auto \
+                        \[time-1325\] auto \
+                        \[time-1330\] auto \
+                        \[time-1335\] auto \
+                        \[time-1340\] auto \
+                        \[time-1345\] auto \
+                        \[time-1350\] auto \
+                        \[time-1355\] auto \
+                        \[time-1400\] auto \
+                        \[time-1405\] auto \
+                        \[time-1410\] auto \
+                        \[time-1415\] auto \
+                        \[time-1420\] auto \
+                        \[time-1425\] auto \
+                        \[time-1430\] auto \
+                        \[time-1435\] auto \
+                        \[time-1440\] auto \
+                        \[time-1445\] auto \
+                        \[time-1450\] auto \
+                        \[time-1455\] auto \
+                        \[time-1500\] auto \
+                        \[time-1505\] auto \
+                        \[time-1510\] auto \
+                        \[time-1515\] auto \
+                        \[time-1520\] auto \
+                        \[time-1525\] auto \
+                        \[time-1530\] auto \
+                        \[time-1535\] auto \
+                        \[time-1540\] auto \
+                        \[time-1545\] auto \
+                        \[time-1550\] auto \
+                        \[time-1555\] auto \
+                        \[time-1600\] auto \
+                        \[time-1605\] auto \
+                        \[time-1610\] auto \
+                        \[time-1615\] auto \
+                        \[time-1620\] auto \
+                        \[time-1625\] auto \
+                        \[time-1630\] auto \
+                        \[time-1635\] auto \
+                        \[time-1640\] auto \
+                        \[time-1645\] auto \
+                        \[time-1650\] auto \
+                        \[time-1655\] auto \
+                        \[time-1700\] auto \
+                        \[time-1705\] auto \
+                        \[time-1710\] auto \
+                        \[time-1715\] auto \
+                        \[time-1720\] auto \
+                        \[time-1725\] auto \
+                        \[time-1730\] auto \
+                        \[time-1735\] auto \
+                        \[time-1740\] auto \
+                        \[time-1745\] auto \
+                        \[time-1750\] auto \
+                        \[time-1755\] auto \
+                        \[time-1800\] auto \
+                        \[time-1805\] auto \
+                        \[time-1810\] auto \
+                        \[time-1815\] auto \
+                        \[time-1820\] auto \
+                        \[time-1825\] auto \
+                        \[time-1830\] auto \
+                        \[time-1835\] auto \
+                        \[time-1840\] auto \
+                        \[time-1845\] auto \
+                        \[time-1850\] auto \
+                        \[time-1855\] auto \
+                        \[time-1900\] auto \
+                        \[time-1905\] auto \
+                        \[time-1910\] auto \
+                        \[time-1915\] auto \
+                        \[time-1920\] auto \
+                        \[time-1925\] auto \
+                        \[time-1930\] auto \
+                        \[time-1935\] auto \
+                        \[time-1940\] auto \
+                        \[time-1945\] auto \
+                        \[time-1950\] auto \
+                        \[time-1955\] auto \
+                        \[time-2000\] auto \
+                        \[time-2005\] auto \
+                        \[time-2010\] auto \
+                        \[time-2015\] auto \
+                        \[time-2020\] auto \
+                        \[time-2025\] auto \
+                        \[time-2030\] auto \
+                        \[time-2035\] auto \
+                        \[time-2040\] auto \
+                        \[time-2045\] auto \
+                        \[time-2050\] auto \
+                        \[time-2055\] auto \
+                        \[time-2100\] auto \
+                        \[time-2105\] auto \
+                        \[time-2110\] auto \
+                        \[time-2115\] auto \
+                        \[time-2120\] auto \
+                        \[time-2125\] auto \
+                        \[time-2130\] auto \
+                        \[time-2135\] auto \
+                        \[time-2140\] auto \
+                        \[time-2145\] auto \
+                        \[time-2150\] auto \
+                        \[time-2155\] auto \
+                        \[time-2200\] auto \
+                        \[time-2205\] auto \
+                        \[time-2210\] auto \
+                        \[time-2215\] auto \
+                        \[time-2220\] auto \
+                        \[time-2225\] auto \
+                        \[time-2230\] auto \
+                        \[time-2235\] auto \
+                        \[time-2240\] auto \
+                        \[time-2245\] auto \
+                        \[time-2250\] auto \
+                        \[time-2255\] auto \
+                        \[time-2300\] auto
+    grid-template-columns \[times\] auto \
+                          \[track-1-start\] auto \
+                          \[track-1-end track-2-start\] auto \
+                          \[track-2-end track-3-start\] auto \
+                          \[track-3-end track-4-start\] auto \
+                          \[track-4-end track-5-start\] auto \
+                          \[track-5-end\]
+
+
+.dot.session-content
+  padding 0.5rem 1rem
+  grid-gap 1rem 1rem
+  display flex
+  flex-direction column
+  position sticky
+  top 6rem
+  @media screen and (min-width: 1200px)
+    padding 1rem 1.5rem
+    grid-gap 2rem 2rem
+
+
+.dot.speaker-name
+  font-size 12px
+  line-height 120%
+  @media screen and (min-width: 1200px)
+    font-size 14px
+  @media screen and (min-width: 1440px)
     font-size 1rem
-    line-height 120%
-    opacity 1
-  & #sessionize.sessionize-wrapper .sz-session__speakers li
-    font-size 1rem
-    line-height 120%
-  & .sz-powered-by
-    display none !important
-  & #sessionize.sessionize-wrapper .sz-session__title
+  @media screen and (min-width: 1920px)
     font-size 1.25rem
-    line-height 120%
-  & #sessionize.sessionize-wrapper
-    font-size 1.125rem
-    line-height 1.75rem
-    font-family var(--dot-font-family-default)
-  & #sessionize.sessionize-wrapper .sz-modal
-    width 90vw
-    max-width 720px
-  & #sessionize.sessionize-wrapper .sz-session
-    z-index 9
-
-    &:hover
-      z-index 9
-
-    &.sz-session--service
-      z-index 10
-      &:hover
-        z-index 10
-
-  & #sessionize.sessionize-wrapper .sz-session.sz-session--full .sz-session__description
-    font-size 1.125rem
-    line-height 1.75rem
-    font-family var(--dot-font-family-default)
-  & #sessionize.sessionize-wrapper .sz-modal-overlay
-    background-color rgba(0, 0, 0, 0.55)
-  & #sessionize.sessionize-wrapper .sz-cssgrid
-    grid-gap 1rem 1rem
-  & #sessionize.sessionize-wrapper .sz-cssgrid .sz-session__card
-    color var(--dot-color-whiteShoulders)
-    background-color #000000
-    border 1pt solid white
-    grid-gap 1rem 1rem
-    position relative
-    border-radius 0
-    box-shadow none
-
-    &::after
-      content none
-
-    &:hover
-      background-color white
-      border-color black
-      color black
-
-    & [data-tagid="192699"]
-      background-color #FF00FF
-      color var(--dot-color-black)
-
-    & [data-tagid="192698"]
-      background-color #00FFFF
-      color var(--dot-color-black)
-
-    & [data-tagid="192701"]
-      background-color #FFFF00
-      color var(--dot-color-black)
-
-    & [data-tagid="192700"]
-      background-color var(--dot-color-hyperGreen)
-      color var(--dot-color-black)
+  @media screen and (min-width: 2560px)
+    font-size 1.5rem
 
 
+.dot.session-dialog[open]
+  position fixed
+  top 50%
+  left 50%
+  margin 0
+  padding 2rem 2rem
+  border-radius 0
+  border 2pt solid currentColor
+  width 100%
+  z-index 900
+  max-width 50vw
+  min-height 400px
+  max-height 70vh
+  overflow scroll
+  transform translate(-50%,-50%)
+  color var(--dot-color-whiteShoulders)
+  background-color black
+  display flex
+  flex-direction column
+  grid-gap 1rem 1rem
+  @media screen and (min-width: 1200px)
+    grid-gap 2rem 2rem
+
+.dot.session-dialog[open]
+  & .dot.session-dialog-content
+    white-space pre-line
 
 
+.dot.session-dialog[open]::backdrop
+  background-color: rgba(0,0,0, 0.8)
+
+
+.dot.session-dialog-title
+  margin 0
+  display block
+  font-size 18px
+  @media screen and (min-width: 1440px)
+    font-size 28px
+  @media screen and (min-width: 1920px)
+    font-size 38px
+
+
+.dot.session-dialog
+  & .dot.speaker-avatar
+    height 8rem
+    width 8rem
+
+
+.dot.session-dialog-close-button.button
+  border 1pt solid currentColor
+
+
+.dot.tab-container
+  display none
+
+.dot.tab-container.is-active
+  display block
+
+
+
+.dot.tabs
+  display flex
+  grid-gap 2rem
+  font-size 1.5rem
+  line-height 130%

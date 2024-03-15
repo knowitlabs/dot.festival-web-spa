@@ -1,0 +1,31 @@
+
+.dot.tags
+  display flex
+  justify-content flex-start
+  align-items center
+  margin 0
+  flex-wrap wrap
+  grid-gap 0.5rem 0.5rem
+  @media screen and (min-width: 1200px)
+    grid-gap 1rem 1rem
+
+  & .dot.tag
+    display flex
+    justify-content flex-start
+    align-items center
+    border-radius 0.5rem
+    height 1rem
+    padding 0.25rem 0.5rem
+    background-color var(--dot-color-whiteShoulders)
+    color var(--dot-color-black)
+    font-size 12px
+    line-height 120%
+    @media screen and (min-width: 1200px)
+      font-size 14px
+      border-radius 1rem
+      height 2rem
+      padding 0.5rem 1rem
+
+
+button.dot
+  cursor pointer
