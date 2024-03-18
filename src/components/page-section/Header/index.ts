@@ -84,6 +84,11 @@ const Header = async () => {
     content: 'Speakers'
   })}
           ${Link({
+    to: '/sessions',
+    className: 'button',
+    content: 'Sessions'
+  })}
+          ${Link({
     to: '/practicalities',
     className: 'button',
     content: 'Practicalities'

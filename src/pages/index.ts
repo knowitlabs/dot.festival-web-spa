@@ -14,4 +14,6 @@ export * from './RegisterPage';
 
 export * from './RegisterReceiptPage';
 
+export * from './SessionsPage';
+
 export * from './ErrorPage';

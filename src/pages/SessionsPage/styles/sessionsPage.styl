@@ -1,0 +1,51 @@
+
+.dot.sessions
+  display flex
+  flex-direction column
+  justify-content flex-start
+  align-items flex-start
+  grid-gap 2rem 2rem
+  @media screen and (min-width: 1200px)
+    grid-gap 4rem 4rem
+
+  & .dot.session
+    border 1px solid currentColor
+    color var(--dot-color-whiteShoulders)
+    background-color black
+    position relative
+    width 100%
+    display flex
+    flex-direction column
+    justify-content flex-start
+    align-items flex-start
+    padding 0.5rem 1rem
+    grid-gap 1rem 1rem
+    padding-bottom 1.5rem
+    @media screen and (min-width: 1200px)
+      padding 1rem 1.5rem
+      grid-gap 2rem 2rem
+      padding-bottom 3rem
+
+
+  & .dot.session-content
+    padding 0
+    white-space pre-line
+
+
+.dot.sessions
+  & > *
+    margin 0
+
+
+  & .dot.speakers
+    display flex
+    flex-direction column
+    grid-gap 0.5rem 0.5rem
+
+    & .dot.speaker
+      display flex
+      justify-content flex-start
+      align-items center
+      grid-gap 0.5rem 0.5rem
+      @media screen and (min-width: 1200px)
+        grid-gap 1rem 1rem

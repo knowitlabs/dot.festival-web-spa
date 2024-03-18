@@ -56,6 +56,10 @@ const App = async (match: KIRouterMatchType, params: unknown) => {
     const { ProgramPage: currentPage } = await import('./pages/ProgramPage');
 
     content = await currentPage();
+  } else if (_page === 'SessionsPage') {
+    const { SessionsPage: currentPage } = await import('./pages/SessionsPage');
+
+    content = currentPage();
   } else if (_page === 'SpeakersPage') {
     const { SpeakersPage: currentPage } = await import('./pages/SpeakersPage');
 

@@ -1,16 +1,19 @@
 #speakers
   display flex
   flex-direction column
-  grid-gap 4rem 4rem
-
+  grid-gap 2rem 2rem
+  @media screen and (min-width: 1024px)
+    grid-gap 4rem 4rem
 
 .dot.speaker-card
   position relative
-  display grid
   grid-gap 2rem 2rem
-  grid-template-columns 200px 1fr
-  grid-template-areas "primary secondary"
+  display flex
+  flex-direction column
   @media screen and (min-width: 1024px)
+    display grid
+    grid-template-columns 200px 1fr
+    grid-template-areas "primary secondary"
     grid-template-columns 296px 1fr
   @media screen and (min-width: 1200px)
     grid-template-columns 296px 1fr
@@ -26,14 +29,19 @@
 
     & .dot.name
       font-size 2rem
-      text-align center
+      text-align left
       display block
       margin-bottom 1rem
+      @media screen and (min-width: 1024px)
+        text-align center
+
     & .dot.tagLine
       font-size 1.5rem
-      text-align center
+      text-align left
       display block
       color grey;
+      @media screen and (min-width: 1024px)
+        text-align center
 
   & .dot.secondary
     grid-area: "secondary"

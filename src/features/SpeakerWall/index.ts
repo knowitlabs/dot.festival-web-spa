@@ -18,7 +18,7 @@ const shuffleArray = (array: unknown[]): unknown[] => {
 export const SpeakerWall = () => {
   addOnAfterAppRender(async () => {
     const response = await fetch(
-      'https://sessionize.com/api/v2/iscaodmy/view/SpeakerWall'
+      'https://sessionize.com/api/v2/2cycckpp/view/SpeakerWall'
     );
     const data = await response.json();
     const speakerWallElement = document.querySelector('#speaker-wall');
@@ -26,10 +26,10 @@ export const SpeakerWall = () => {
     let speakerHTML = '';
 
     if (speakerWallElement && data) {
-      const maxArray = data.slice(0, 6);
-      const shuffledArray = shuffleArray(maxArray);
+      const shuffledArray = shuffleArray(data);
+      const maxArray = shuffledArray.slice(0, 6);
 
-      speakerHTML = shuffledArray
+      speakerHTML = maxArray
         .map((speaker: any) => {
           return html`<div
             class="dot speaker"

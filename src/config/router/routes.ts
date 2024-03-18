@@ -28,6 +28,12 @@ export const routes: KIRouteType[] = [
     regex: /^\/speakers$/
   },
   {
+    path: '/sessions',
+    page: 'SessionsPage',
+    name: 'Sessions',
+    regex: /^\/sessions$/
+  },
+  {
     path: '/practicalities',
     page: 'PracticalitiesPage',
     name: 'Practicalities',

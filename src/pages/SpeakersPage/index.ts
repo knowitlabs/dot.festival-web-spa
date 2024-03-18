@@ -80,6 +80,5 @@ export const SpeakersPage = () => {
           <div id="speakers" class="dot speakers"></div>`
     )
   )}
-    ${Section(Container(html`<h2 class="dot">More speakers coming soon!</h2>`))}
   `;
 };
