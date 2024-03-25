@@ -3,9 +3,9 @@ export const getTimeSlot = (date: string) => {
 
   timeSlotDate.setMinutes(Math.ceil(timeSlotDate.getMinutes() / 5) * 5);
 
-  const hours = timeSlotDate.getHours();
-  const minutes = timeSlotDate.getMinutes();
-  const timeSlot = `${hours}${`${minutes}`.padStart(2, '0')}`;
+  const hours = (timeSlotDate.getHours() + '').padStart(2, '0');
+  const minutes = (timeSlotDate.getMinutes() + '').padStart(2, '0');
+  const timeSlot = `${hours}${`${minutes}`}`;
 
   return `time-${timeSlot}`;
 };

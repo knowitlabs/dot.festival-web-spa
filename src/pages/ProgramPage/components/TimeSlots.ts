@@ -2,6 +2,8 @@ import { TimeSlot } from './TimeSlot';
 
 export const TimeSlots = () => {
   const timeSlots = [
+    '09:00',
+    '09:30',
     '10:00',
     '10:30',
     '11:00',
