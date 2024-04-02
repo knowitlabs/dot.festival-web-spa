@@ -36,7 +36,7 @@ export const PracticalitiesPage = () => {
   })}
       </p>
       <p class="dot">
-      Registration deadline is <strong class="dot">1st of April</strong>.
+      Registration deadline for full reimbursement is <strong class="dot">1st of April</strong>.
       </p>
       <p class="dot">
       You may cancel before the 1st of April free of charge. After this, a cancellation fee up to the full price can be billed to your company if neither you nor we can find someone else to take your spot. If you wish to cancel or change anything else regarding your registration after submission, send a mail to <a href="mailto:dot.festival@knowit.eu" class="dot">dot.festival@knowit.eu</a>. Remember to consult with your leader before registration.
@@ -53,7 +53,7 @@ export const PracticalitiesPage = () => {
 <li class="dot">Venue</li>
 </ul>
 <p class="dot">
-Travel is NOT included and must be arranged individually.
+Travel is <strong class="dot">NOT</strong> included and must be arranged individually.
       </p>
       <h2 class="dot">Locations</h2>
       <p class="dot">
@@ -62,9 +62,7 @@ Travel is NOT included and must be arranged individually.
       <h2 class="dot">
       Travel
       </h2>
-      <p class="dot">
-      The travel cost is not included in the conference cost.
-</p>
+
 <p class="dot">
 Travel to and from the airport (Oslo Lufthavn - Gardermoen):
 We recommend traveling with train (Flytoget or region trains) or bus.

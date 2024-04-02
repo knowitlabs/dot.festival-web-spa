@@ -93,12 +93,7 @@ const Header = async () => {
     className: 'button',
     content: 'Practicalities'
   })}
-          ${Link({
-    to: 'https://sessionize.com/dot-festival-2024-oslo/',
-    server: true,
-    className: 'button primary cfp',
-    content: translate('callForSpeakers')
-  })}
+
           <!--
           <div class="dot" style="display:none;">
             <button
