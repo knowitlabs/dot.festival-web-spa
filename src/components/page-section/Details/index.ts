@@ -10,7 +10,7 @@ export const Details = () => {
         <h2 class="dot when">31st of May - 1st of June 2024</h2>
 
         <span class="dot pretitle second">Where?</span>
-        <h2 class="dot when">Rebel, Oslo, Norway</h2>
+        <h2 class="dot when">Rebel & Knowit, Oslo, Norway</h2>
       </div>
     </div>
   </section>`;

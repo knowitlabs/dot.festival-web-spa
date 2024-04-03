@@ -49,15 +49,42 @@ export const PracticalitiesPage = () => {
 </p>
 <ul class="dot">
 <li class="dot">Hotel Friday-Saturday (Single room/double if shared)</li>
-<li class="dot">Lunch and dinner (Friday), lunch (Saturday)</li>
+<li class="dot">Lunch and dinner (Friday)</li>
 <li class="dot">Venue</li>
 </ul>
 <p class="dot">
 Travel is <strong class="dot">NOT</strong> included and must be arranged individually.
       </p>
       <h2 class="dot">Locations</h2>
+
+      <h3 class="dot">Venues</h3>
+      <p class="dot">The venue for day 1, Friday 31st of May, is Rebel, the venue for day 2, Saturday 1st of June, is Knowit.</p>
+      <h4 class="dot">Rebel</h4>
+      <address class="dot">
+      Universitetsgata 2, 0164 Oslo
+      </address>
       <p class="dot">
-      add adresses and info here
+      <a class="dot" href="https://www.google.com/maps/place/Universitetsgata+2,+0164+Oslo/@59.9174995,10.7374959,17z/data=!3m1!4b1!4m6!3m5!1s0x46416fa0b9a2ac11:0x3d03ca6ecde21457!8m2!3d59.9174968!4d10.7400708!16s%2Fg%2F11srdwwyxq?entry=ttu" target="_blank" rel="noopener noreferrer">Link to maps.</a>
+      </p>
+      <h4 class="dot">Knowit</h4>
+      <address class="dot">
+      Universitetsgata 1, 0164 Oslo
+      </address>
+      <p class="dot">
+      <a class="dot" href="https://www.google.com/maps/place/Universitetsgata+1,+0164+Oslo/@59.9171886,10.7381045,17z/data=!3m1!4b1!4m6!3m5!1s0x46416e7cf558d1e5:0xe4dad998c3be081c!8m2!3d59.9171877!4d10.7389393!16s%2Fg%2F11fr3qfn79?entry=ttu" target="_blank" rel="noopener noreferrer">Link to maps.</a>
+      </p>
+      <h3 class="dot">Hotel</h3>
+      <p class="dot">
+      The address for the hotel is:
+      </p>
+      <address class="dot">
+      Scandic St. Olavs plass
+      St. Olavs Plass 1
+      0165 Oslo
+      Tel 23 15 56 00
+      </address>
+      <p class="dot">
+      <a href="https://www.google.com/maps/place/Scandic+St.+Olavs+plass/@59.9181767,10.737292,17z/data=!3m1!4b1!4m9!3m8!1s0x4616da4749cce2e1:0x6adbba6aa14c5e81!5m2!4m1!1i2!8m2!3d59.918174!4d10.7398669!16s%2Fg%2F113gz7w46?entry=ttu" class="dot" target="_blank" rel="noreferrer noopener">Links to maps</a>
       </p>
       <h2 class="dot">
       Travel

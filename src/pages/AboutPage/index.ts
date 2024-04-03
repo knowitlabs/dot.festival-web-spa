@@ -38,6 +38,10 @@ export const AboutPage = () => {
       {
         q: 'Where can I store my luggage?',
         a: 'The conference facility will have an area where you can keep your luggage before hotel check-in and after hotel check-out. The hotel may also keep your luggage'
+      },
+      {
+        q: 'Which hotel am I staying at?',
+        a: 'Scandic St. Olavs plass, St. Olavs Plass 1, 0165 Oslo, Tel +47 23 15 56 00'
       }
     ]
   })}
