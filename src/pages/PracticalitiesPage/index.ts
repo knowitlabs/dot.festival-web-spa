@@ -7,26 +7,6 @@ export const PracticalitiesPage = () => {
   return html`<section class="dot section">
     <div class="dot container">
       <h1 class="dot">Practicalities</h1>
-      <h2 class="dot">General information</h2>
-
-      <p class="dot">
-        dot.festival 2024 will be hosted centrally in Norway. We are in the
-        process of finalizing the venue and hotel confirmations and will provide
-        information and localization when this is complete, as well as other
-        useful information. We will rapidly update with more information the
-        following month. We also have a
-        <a
-          href="https://info.knowit.no/code-of-conduct"
-          target="_blank"
-          class="dot"
-          rel="noopener noreferrer"
-          >Code of Conduct</a
-        >.
-      </p>
-      <h2 class="dot">General information</h2>
-      <p class="dot">
-      Any questions can be forwarded to <a class="dot" href="mailto: dot.festival@knowit.eu">dot.festival@knowit.eu</a>
-      </p>
       <h2 class="dot">Registration</h2>
       <p class="dot">
       ${Link({
@@ -54,6 +34,26 @@ export const PracticalitiesPage = () => {
 </ul>
 <p class="dot">
 Travel is <strong class="dot">NOT</strong> included and must be arranged individually.
+      </p>
+      <h2 class="dot">General information</h2>
+
+      <p class="dot">
+        dot.festival 2024 will be hosted centrally in Norway. We are in the
+        process of finalizing the venue and hotel confirmations and will provide
+        information and localization when this is complete, as well as other
+        useful information. We will rapidly update with more information the
+        following month. We also have a
+        <a
+          href="https://info.knowit.no/code-of-conduct"
+          target="_blank"
+          class="dot"
+          rel="noopener noreferrer"
+          >Code of Conduct</a
+        >.
+      </p>
+      <h2 class="dot">General information</h2>
+      <p class="dot">
+      Any questions can be forwarded to <a class="dot" href="mailto: dot.festival@knowit.eu">dot.festival@knowit.eu</a>
       </p>
       <h2 class="dot">Locations</h2>
 
