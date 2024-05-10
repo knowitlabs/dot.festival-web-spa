@@ -64,15 +64,18 @@ export const Session = ({
   speakers,
   trackIndex
 }: SessionParamsType) => {
-  const { id, title, description, startsAt, endsAt, isPlenumSession } = session;
+  const { id, title, isServiceSession, startsAt, endsAt, isPlenumSession } =
+    session;
   const startsAtHumanReadable = getDateDigits(startsAt);
   const timeSlotStart = getTimeSlot(startsAt);
   const timeSlotEnd = getTimeSlot(endsAt);
   const duration = getDuration(startsAt, endsAt);
   const tags = getTags(session);
   const formats = getSessionFormat(session);
+  const isKeynote = isPlenumSession && !isServiceSession;
   const classNames = cx(`dot session session-${sessionIndex}`, {
     ['is-plenum']: isPlenumSession,
+    ['is-keynote']: isKeynote,
     ['track-all']: isPlenumSession,
     ['is-workshop']: formats.includes(192696),
     meta: isPlenumSession,
@@ -87,7 +90,7 @@ export const Session = ({
     _style += `grid-column: track-${trackIndex};`;
   }
 
-  if (!isPlenumSession) {
+  if (!isPlenumSession || isKeynote) {
     return html`<div
       tabindex="0"
       onclick="modal_session_${id}.showModal()"

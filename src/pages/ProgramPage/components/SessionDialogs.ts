@@ -5,7 +5,9 @@ export const SessionDialogs = ({ rooms, speakers }) => {
 
   for (const room of rooms) {
     for (const session of room.sessions) {
-      if (session.isPlenumSession) continue;
+      const isKeynote = session.isPlenumSession && !session.isServiceSession;
+
+      if (session.isPlenumSession && !isKeynote) continue;
 
       _html += SessionDialog({ session, speakers });
     }
