@@ -64,8 +64,15 @@ export const Session = ({
   speakers,
   trackIndex
 }: SessionParamsType) => {
-  const { id, title, isServiceSession, startsAt, endsAt, isPlenumSession } =
-    session;
+  const {
+    id,
+    title,
+    isServiceSession,
+    description,
+    startsAt,
+    endsAt,
+    isPlenumSession
+  } = session;
   const startsAtHumanReadable = getDateDigits(startsAt);
   const timeSlotStart = getTimeSlot(startsAt);
   const timeSlotEnd = getTimeSlot(endsAt);
@@ -113,7 +120,11 @@ export const Session = ({
         ${startsAtHumanReadable} → ${duration} mins
       </time>
       <h4 class="dot session-title">${title}</h4>
-      ${Speakers({ session, speakers })} ${Tags({ tags })}
+      ${description
+    ? `<p class="dot session-description">${description}</p>`
+    : ''}
+      ${session.speakers.length ? `${Speakers({ session, speakers })}` : ''}
+      ${tags.length ? `${Tags({ tags })}` : ''}
     </div>
   </div>`;
 };
