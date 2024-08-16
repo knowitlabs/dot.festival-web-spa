@@ -7,10 +7,10 @@ export const Details = () => {
     <div class="dot container">
       <div class="dot content">
         <span class="dot pretitle first">When?</span>
-        <h2 class="dot when">31st of May - 1st of June 2024</h2>
+        <h2 class="dot when">Date TBD - 2025</h2>
 
         <span class="dot pretitle second">Where?</span>
-        <h2 class="dot when">Rebel & Knowit, Oslo, Norway</h2>
+        <h2 class="dot when">TBD, Norway</h2>
       </div>
     </div>
   </section>`;

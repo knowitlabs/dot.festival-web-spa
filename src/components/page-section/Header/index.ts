@@ -69,10 +69,18 @@ const Header = async () => {
             >More coming soon!</span
           >-->
           ${Link({
+    to: 'https://sessionize.com/dot-festival-2025',
+    server: true,
+    className: 'button primary cfp',
+    content: `
+            ${translate('callForSpeakers')}`
+  })}
+          ${Link({
     to: '/about',
     className: 'button',
     content: 'About'
   })}
+          <!--
           ${Link({
     to: '/program',
     className: 'button',
@@ -87,7 +95,7 @@ const Header = async () => {
     to: '/sessions',
     className: 'button',
     content: 'Sessions'
-  })}
+  })}-->
           ${Link({
     to: '/practicalities',
     className: 'button',

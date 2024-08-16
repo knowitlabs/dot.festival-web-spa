@@ -11,7 +11,7 @@ export const Meantime = () => {
         <h2 class="dot title">${translate('inTheMeanTimeTitle')}</h2>
         <p class="dot description">${translate('inTheMeanTimeDescription')}</p>
         ${Link({
-    to: 'https://sessionize.com/dot-festival-2024-oslo/',
+    to: 'https://sessionize.com/dot-festival-2025',
     server: true,
     content: translate('callForSpeakers'),
     className: 'dot button',

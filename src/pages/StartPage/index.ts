@@ -4,13 +4,13 @@ import { Container } from '../../components/layout/Container';
 import { Section } from '../../components/layout/Section';
 import { WhatHappenedToKDS } from '../../features/WhatHappenedToKDS';
 import { Details } from '../../components/page-section/Details';
-import { SpeakerWall } from '../../features/SpeakerWall';
+import { WeNeedYou } from '../../components/page-section/WeNeedYou';
 
 const html = String.raw;
 
 export const StartPage = () => {
   return html`
-    ${Section(Container(Hero()))} ${Details()} ${SpeakerWall()}
+    ${Section(Container(Hero()))} ${WeNeedYou()} ${Details()}
     ${WhatHappenedToKDS()}
   `;
 };

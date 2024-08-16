@@ -18,7 +18,7 @@ export const WeNeedYou = () => {
           more.
         </p>
         ${Link({
-    to: 'https://sessionize.com/dot-festival-2024-oslo/',
+    to: 'https://sessionize.com/dot-festival-2025',
     server: true,
     className: 'button primary cfp border',
     content: `

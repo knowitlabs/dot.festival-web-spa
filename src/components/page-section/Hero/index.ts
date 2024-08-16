@@ -18,13 +18,13 @@ const Hero = () => {
       <h1 class="dot">${translate('title')}</h1>
       <p class="dot lead">${translate('description')}</p>
       <div class="dot actions">
-        ${Link({
+        <!--        ${Link({
     to: 'register',
     className: 'button primary border',
     content: `${buttonBackground}${buttonBackground}${buttonBackground}${buttonBackground}${buttonBackground}${translate(
       'primary-register'
     )}`
-  })}
+  })}-->
       </div>
     </div>
   `;

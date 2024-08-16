@@ -19,13 +19,13 @@ export const AboutPage = () => {
   })}
       </p>
       <h2 class="dot">
-      dot.festival 2024
+      dot.festival 2025
       </h2>
       <p class="dot>
-      In 2024, the conference will have its 10th anniversary and we are celebrating this in Oslo, the origin of where the conference was formed. The goal of the conference is to create a safe and low-threshold arena for our employees to share, learn and develop, as well as creating stronger bonds between our colleagues.
+      In 2025, the conference will be in Norway. More information to come. The goal of the conference is to create a safe and low-threshold arena for our employees to share, learn and develop, as well as creating stronger bonds between our colleagues.
       </p>
       <p class="dot>
-      The ambition for dot.festival is that it will be held annually and that its location varies from year to year. The conference begins during Friday around lunchtime and runs until Saturday afternoon. A conference dinner is arranged on the Friday evening.
+      The ambition for dot.festival is that it will be held annually and that its location varies from year to year.
       </p>
     <div class="dot container">
       <h2 class="dot">FAQ</h2>
@@ -41,7 +41,7 @@ export const AboutPage = () => {
       },
       {
         q: 'Which hotel am I staying at?',
-        a: 'Scandic St. Olavs plass, St. Olavs Plass 1, 0165 Oslo, Tel +47 23 15 56 00'
+        a: 'TBD'
       }
     ]
   })}
