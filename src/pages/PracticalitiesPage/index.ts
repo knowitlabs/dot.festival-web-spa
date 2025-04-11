@@ -25,12 +25,12 @@ export const PracticalitiesPage = () => {
         neither you nor we can find someone else to take your spot. If you wish
         to cancel or change anything else regarding your registration after
         submission, send a mail to
-        <a href="mailto:dot.festival@knowit.eu" class="dot"
-          >dot.festival@knowit.eu</a
+        <a href="mailto:info@knowitfestival.eu" class="dot"
+          >info@knowitfestival.eu</a
         >. Remember to consult with your leader before registration.
       </p>
       <p class="dot">
-        Registration fee dot.festival: <strong class="dot">5000 NOK</strong>.
+        Registration fee Knowit Festival: <strong class="dot">5000 NOK</strong>.
       </p>
       <p class="dot">The following is covered by this cost:</p>
       <ul class="dot">
@@ -47,7 +47,7 @@ export const PracticalitiesPage = () => {
       <h2 class="dot">General information</h2>
 
       <p class="dot">
-        dot.festival 2025 will be hosted centrally in Norway. We also have a
+        Knowit Festival 2025 will be hosted centrally in Norway. We also have a
         <a
           href="https://info.knowit.no/code-of-conduct"
           target="_blank"
@@ -59,8 +59,8 @@ export const PracticalitiesPage = () => {
       <h2 class="dot">General information</h2>
       <p class="dot">
         Any questions can be forwarded to
-        <a class="dot" href="mailto: dot.festival@knowit.eu"
-          >dot.festival@knowit.eu</a
+        <a class="dot" href="mailto: info@knowitfestival.eu"
+          >info@knowitfestival.eu</a
         >
       </p>
       <h2 class="dot">Locations</h2>

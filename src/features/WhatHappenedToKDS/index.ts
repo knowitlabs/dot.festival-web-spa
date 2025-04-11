@@ -7,12 +7,12 @@ export const WhatHappenedToKDS = () => {
     <section class="dot section">
       <div class="dot container">
         <p class="dot description" style="max-width:60%;">
-          <strong class="dot">dot.festival</strong> is a conference for Knowit
+          <strong class="dot">Knowit Festival</strong> is a conference for Knowit
           employees, by Knowit employees.
           <strong class="dot">Together we connect the dots!</strong>
         </p>
         <p class="dot description" style="max-width:60%;">
-          <strong class="dot">dot.festival</strong> was originally an arena for
+          <strong class="dot">Knowit Festival</strong> was originally an arena for
           developers at Knowit known as
           <strong class="dot">Knowit Developer Summit (KDS)</strong>, now we
           want to include <strong class="dot">all our disciplines</strong>.

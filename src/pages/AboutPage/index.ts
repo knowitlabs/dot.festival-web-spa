@@ -8,7 +8,7 @@ export const AboutPage = () => {
   return html`<section class="dot section">
     <div class="dot container">
       <p class="dot">
-      dot.festival, formerly known as Knowit Developer Summit (KDS), is a conference for Knowit employees, by Knowit employees. As KDS originally was an arena for the developers in Knowit, the new concept embraces the wide range of subject areas and expertise found in our employees, as well as underlying our need/mission/? for working interdisciplinary. Together we get it done!
+      Knowit Festival, formerly known as Knowit Developer Summit (KDS), is a conference for Knowit employees, by Knowit employees. As KDS originally was an arena for the developers in Knowit, the new concept embraces the wide range of subject areas and expertise found in our employees, as well as underlying our need/mission/? for working interdisciplinary. Together we get it done!
       </p>
       <p class="dot">
       ${Link({
@@ -19,13 +19,13 @@ export const AboutPage = () => {
   })}
       </p>
       <h2 class="dot">
-      dot.festival 2025
+      Knowit Festival 2025
       </h2>
       <p class="dot>
       In 2025, the conference will be in Norway. More information to come. The goal of the conference is to create a safe and low-threshold arena for our employees to share, learn and develop, as well as creating stronger bonds between our colleagues.
       </p>
       <p class="dot>
-      The ambition for dot.festival is that it will be held annually and that its location varies from year to year.
+      The ambition for Knowit Festival is that it will be held annually and that its location varies from year to year.
       </p>
     <div class="dot container">
       <h2 class="dot">FAQ</h2>
