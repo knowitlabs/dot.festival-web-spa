@@ -7,7 +7,7 @@ import translate from '../../../lib/translate';
 import './styles/header.styl';
 
 //import logo from '../../../assets/images/logo/logo.svg';
-import logo from '../../../assets/images/logo/knowit-logo.svg';
+import logo from '../../../assets/images/logo/knowitfestival.svg';
 import earthIcon from '../../../assets/images/icons/ui/fi-ts-earth-europa.svg';
 // import { cx } from '@knowitlabs/cx';
 
