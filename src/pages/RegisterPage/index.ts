@@ -6,7 +6,7 @@ const html = String.raw;
 export const RegisterPage = () => {
   return html`${Container(html`<p class="dot">
       <strong class="dot"
-        >If you register after 1st of April, you will not be reimbursed if you
+        >If you register after 1st of September, you will not be reimbursed if you
         cancel. You or you company will be billed.</strong
       >
     </p>`)}

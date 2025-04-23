@@ -10,7 +10,7 @@ export const Register = () => {
     const container = document.querySelector('#register-form');
 
     if (container) {
-      createWidget('fcxtlQF7', {
+      createWidget('PhsvK6gu', {
         container: container as HTMLElement,
         hideFooter: true,
         hideHeaders: true,
@@ -34,3 +34,5 @@ export const Register = () => {
   return html`<h1 class="dot">Register</h1>
     <form id="register-form" style="height: 100%;"></form>`;
 };
+
+//<div data-tf-live="01JRWZ8WFP66GHWSKD5HQQP1B8"></div><script src="//embed.typeform.com/next/embed.js"></script>
