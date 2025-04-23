@@ -4,7 +4,7 @@
   font-weight 600
   position sticky
   top 0
-  background-color var(--dot-color-black)
+  background-color var(--dot-color-dark)
   z-index 20
   display none
   font-size 18px
@@ -42,16 +42,16 @@
 .dot.track-slot
   &.track-1
     &::after
-      background-color red
+      background-color var(--dot-color-hyperGreen)
   &.track-2
     &::after
-      background-color green
+      background-color var(--dot-color-white)
   &.track-3
     &::after
-      background-color blue
+      background-color #55D440 
   &.track-4
     &::after
-      background-color white
+      background-color var(--dot-color-whiteShoulders)
   &.track-5
     &::after
       background-color white
@@ -67,16 +67,16 @@
     display block
   &.track-1
     &::after
-      background-image radial-gradient(circle at 1px 1px, red 1px, transparent 0)
+      background-image radial-gradient(circle at 1px 1px, #cfceff 1px, transparent 0)
   &.track-2
     &::after
-      background-image radial-gradient(circle at 1px 1px, green 1px, transparent 0)
+      background-image radial-gradient(circle at 1px 1px, var(--dot-color-white) 1px, transparent 0)
   &.track-3
     &::after
-      background-image radial-gradient(circle at 1px 1px, blue 1px, transparent 0)
+      background-image radial-gradient(circle at 1px 1px, background-color var(--dot-color-whiteShoulders) 1px, transparent 0)
   &.track-4
     &::after
-      background-image radial-gradient(circle at 1px 1px, white 1px, transparent 0)
+      background-image radial-gradient(circle at 1px 1px, #55D440 1px, transparent 0)
   &.track-5
     &::after
       background-image radial-gradient(circle at 1px 1px, white 1px, transparent 0)
@@ -217,7 +217,7 @@
 
 .dot.schedule
   grid-gap 1rem 1rem
-  background-color black
+  background-color var(--dot-color-dark)
   color white
   display flex
   flex-wrap wrap

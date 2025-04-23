@@ -17,10 +17,10 @@ export const PracticalitiesPage = () => {
       </p>
       <p class="dot">
         Registration deadline for full reimbursement is
-        <strong class="dot">1st of April</strong>.
+        <strong class="dot">1st of September</strong>.
       </p>
       <p class="dot">
-        You may cancel before the 1st of April free of charge. After this, a
+        You may cancel before the 1st of September free of charge. After this, a
         cancellation fee up to the full price can be billed to your company if
         neither you nor we can find someone else to take your spot. If you wish
         to cancel or change anything else regarding your registration after
@@ -30,7 +30,7 @@ export const PracticalitiesPage = () => {
         >. Remember to consult with your leader before registration.
       </p>
       <p class="dot">
-        Registration fee Knowit Festival: <strong class="dot">5000 NOK</strong>.
+        Registration fee Knowit Festival: <strong class="dot">5500 NOK</strong>.
       </p>
       <p class="dot">The following is covered by this cost:</p>
       <ul class="dot">
@@ -47,7 +47,7 @@ export const PracticalitiesPage = () => {
       <h2 class="dot">General information</h2>
 
       <p class="dot">
-        Knowit Festival 2025 will be hosted centrally in Norway. We also have a
+        Knowit Festival 2025 will be hosted in Malmö, Sweden. We also have a
         <a
           href="https://info.knowit.no/code-of-conduct"
           target="_blank"

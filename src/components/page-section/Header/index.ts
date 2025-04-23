@@ -81,7 +81,7 @@ const Header = async () => {
     className: 'button',
     content: 'About'
   })}
-          ${Link({
+    <!--  ${Link({
     to: '/program',
     className: 'button',
     content: 'Program'
@@ -95,7 +95,7 @@ const Header = async () => {
     to: '/sessions',
     className: 'button',
     content: 'Sessions'
-  })}
+  })}-->
           ${Link({
     to: '/practicalities',
     className: 'button',
