@@ -20,8 +20,8 @@ const Hero = () => {
       <div class="dot actions">
     ${Link({
     to: 'register',
-    className: 'button primary border',
-    content: `${buttonBackground}${buttonBackground}${buttonBackground}${buttonBackground}${buttonBackground}${translate(
+    className: 'button primary cfp',
+    content: `${translate(
       'primary-register'
     )}`
   })}

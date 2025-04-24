@@ -11,6 +11,6 @@ const html = String.raw;
 export const StartPage = () => {
   return html`
     ${Section(Container(Hero()))} ${WeNeedYou()} ${Details()}
-    ${WhatHappenedToKDS()}
+    // ${WhatHappenedToKDS()}
   `;
 };
