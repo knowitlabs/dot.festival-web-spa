@@ -11,12 +11,12 @@ export const WhatHappenedToKDS = () => {
           employees, by Knowit employees.
           <strong class="dot">Together we connect the dots!</strong>
         </p>
-        <p class="dot description" style="max-width:60%;">
+        <!-- <p class="dot description" style="max-width:60%;">
           <strong class="dot">Knowit Festival</strong> was originally an arena for
           developers at Knowit known as
           <strong class="dot">Knowit Developer Summit (KDS)</strong>, now we
           want to include <strong class="dot">all our disciplines</strong>.
-        </p>
+        </p> -->
       </div>
     </section>
   </div>`;
