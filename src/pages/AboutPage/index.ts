@@ -12,7 +12,7 @@ export const AboutPage = () => {
       </p>
       <p class="dot">
       ${Link({
-    to: 'https://info.knowit.no/code-of-conduct',
+    to: 'https://www.knowit.eu/about-knowit/our-policies/',
     server: true,
     className: 'button primary coc',
     content: 'Code of Conduct'
