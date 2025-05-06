@@ -1,13 +1,13 @@
 section.dot.section.we-need-you
   position relative
-  background-color var(--dot-color-white)
+  z-index 6
+  border-radius 32px
+  background-color var(--dot-color-purple)
   padding-top 4rem !important
   padding-bottom 6rem
-  & .dot.container
-    @media screen and (min-width: 640px)
-      display grid
-      grid-template-columns 1fr 70%
-      grid-template-areas: ". content"
+/*  & .dot.container
+    @media screen and (min-width: 640px)*/
+
 
   & .dot.content
     grid-area content
@@ -18,19 +18,17 @@ section.dot.section.we-need-you
 
   & h2.dot
     color #000
-    text-align right
-    font-family Radial
-    font-size 48px
+    font-family var(--dot-font-family-default)
+    font-size 42px
     font-style normal
-    font-weight 600
+    font-weight 500
     line-height 130%  /* 62.4px */
     margin-bottom 4rem
     max-width 22ch
-    margin-left auto
 
   & p.dot
-    color #000
-    font-family Radial
+    color #000 !important
+    font-family var(--dot-font-family-default)
     font-size 34px
     font-style normal
     font-weight 400

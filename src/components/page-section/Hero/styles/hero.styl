@@ -3,12 +3,17 @@
   display grid
   grid-template-areas "hero-image"\
                       "hero-title"\
-                      "hero-lead"\
+                      "hero-date"\
+                      "hero-location"\
+                      "hero-secondTitle"\
+                      "hero-secondDescription"\ 
                       "hero-actions"
   @media screen and (min-width: 1024px)
     grid-template-areas "hero-title hero-image"\
-                        "hero-title hero-image"\
-                        "hero-lead hero-image"\
+                        "hero-date hero-image"\
+                        "hero-location hero-image"\
+                        "hero-secondTitle hero-image"\
+                        "hero-secondDescription hero-image"\
                         "hero-actions ."
 
 
@@ -20,7 +25,7 @@
     max-width 100%
     margin-bottom 4rem
     @media screen and (min-width: 640px)
-      max-height 40vh
+      max-height 20vh
 
 
     // @media screen and (min-width: 640px)
@@ -28,9 +33,9 @@
 .dot.hero
   & h1.dot
     grid-area hero-title
-    margin-bottom 2rem
+    margin-bottom 1rem
     max-width 600px
-    font-size 1.75rem
+    font-size 58px
     text-align left
     margin-top auto
     @media screen and (min-width: 640px)
@@ -39,13 +44,13 @@
       text-align left
       margin-right auto
       font-size 2.75rem
-      margin-bottom 3.5rem
     @media screen and (min-width: 1440px)
-      font-size 3rem
+      font-size 58px
 
 .dot.hero
   & p.dot.lead
-    grid-area hero-lead
+    color var(--dot-color-whiteShoulders)
+    //grid-area hero-lead
     margin-bottom 2rem
     max-width 600px
     font-size 1.125rem
@@ -62,10 +67,47 @@
       font-size 1.5rem
       margin-bottom 3rem
 
-
 .dot.hero
   & .dot.actions
     grid-area hero-actions
     display flex
     align-items flex-start
     justify-content flex-start
+
+  & p.dot.date
+    grid-area hero-date
+    display flex
+    align-items flex-start
+    justify-content flex-start
+    margin-bottom 0 !important
+    color var(--dot-color-purple) !important
+
+  & p.dot.location
+    grid-area hero-location
+    display flex
+    align-items flex-start
+    justify-content flex-start
+    color var(--dot-color-purple) !important
+
+  & h2.dot.secondTitle
+    grid-area hero-secondTitle
+    display flex
+    align-items flex start
+    color var(--dot-color-whiteShoulders)
+    padding-top 30px
+    padding-bottom 1rem
+    margin-bottom 0
+    font-size 30px
+    max-width 30ch
+
+  & p.dot.secondDescription
+    grid-area hero-secondDescription
+    display flex
+    align-items flex start
+    font-size 23px !important
+    color var(--dot-color-whiteShoulders) !important
+
+
+
+
+
