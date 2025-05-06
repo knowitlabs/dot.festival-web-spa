@@ -7,7 +7,7 @@ const html = String.raw;
 export const AboutPage = () => {
   return html`<section class="dot section">
     <div class="dot container">
-      <p class="dot">
+      <p class="dot about">
       Knowit Festival, formerly known as Knowit Developer Summit (KDS), is a conference for Knowit employees, by Knowit employees. As KDS originally was an arena for the developers in Knowit, the new concept embraces the wide range of subject areas and expertise found in our employees, as well as underlying our need/mission/? for working interdisciplinary. Together we get it done!
       </p>
       <p class="dot">
