@@ -16,15 +16,12 @@ const Hero = () => {
       />
 
       <h1 class="dot">${translate('title')}</h1>
-      <p class="dot lead">${translate('description')}</p>
+      <p class="dot lead date">${translate('date')}</p>
+      <p class="dot lead location">${translate('location')}</p>
+
+      <h2 class="dot lead secondTitle">${translate('secondTitle')}</h2>
+      <p class="dot lead secondDescription">${translate('secondDescription')}</p>
       <div class="dot actions">
-    ${Link({
-    to: 'register',
-    className: 'button primary cfp',
-    content: `${translate(
-      'primary-register'
-    )}`
-  })}
       </div>
     </div>
   `;

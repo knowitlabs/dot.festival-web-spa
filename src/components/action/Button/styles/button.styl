@@ -18,20 +18,20 @@ a.dot.button
   font-family var(--dot-font-family-default)
   font-size 1.25rem
   line-height 120%
-  font-weight 600
+  font-weight 400
   padding 1rem 2rem
 
 
 .dot.button
   &:hover
-    background-color var(--dot-color-hyperGreen)
+    background-color var(--dot-color-purple)
     color var(--dot-color-dark)
     border-color currentColor
 
 .dot.button
   &.primary,
   &.is-active
-    background-color var(--dot-color-white)
+    background-color var(--dot-color-pink)
     color var(--dot-color-dark)
 
 .dot.button
@@ -63,6 +63,8 @@ a.dot.button
   border 2px solid var(--dot-color-button-color, white)
   background-color var(--dot-color-button-color-background, --dot-color-dark)
   outline 6px solid var(--dot-color-button-color-background, --dot-color-dark)
+  &.white
+  background-color var(-dot-color-white)
   &:hover
     border 2px solid var(--dot-color-button-color, black)
     color var(--dot-color-button-color, black)
@@ -90,7 +92,7 @@ a.dot.button
 
 .dot.button.border.cfp
   --dot-color-button-color: #000
-  --dot-color-button-color-background: #FEFBE6
+  --dot-color-button-color-background: #cfceff
   position relative
   color var(--dot-color-button-color)
   border 2px solid currentColor
@@ -118,3 +120,8 @@ a.dot.button
     &:nth-of-type(5)
       left calc(100% - 37px)
       top 39px
+.dot.button.border.cfp.white
+  --dot-color-button-color-background: #fefbe6
+  &:hover
+    --dot-color-button-color: #fff
+    --dot-color-button-color-background: #000

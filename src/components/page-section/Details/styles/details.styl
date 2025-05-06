@@ -1,6 +1,7 @@
 section.dot.section.details
   position relative
-  background-color var(--dot-color-hyperGreen)
+  margin-top -30px
+  background-color var(--dot-color-white)
   padding-top 8rem !important
   padding-bottom 12rem
   color var(--dot-color-black)
@@ -11,19 +12,20 @@ section.dot.section.details
 
   & h2.dot
     color #000
-    font-family Radial
-    font-size 90px
+    font-family var(--dot-font-family-default)
+    font-size 42px
     font-style normal
-    font-weight 400
+    font-weight 500
     line-height 120% /* 108px */
-    margin-bottom 10rem
-    &:last-of-type
-      margin-bottom 0
+    margin-bottom 4rem
+
+  & p 
+
 
   & .dot.pretitle
     color #000
-    font-family Radial
-    font-size 48px
+    var(--dot-font-family-default)
+    font-size 26px
     font-style normal
     font-weight 400
     line-height 130% /* 62.4px */
@@ -32,6 +34,3 @@ section.dot.section.details
     &.first
       margin-left auto
       text-align center
-
-    &.second
-      margin-left 30%
