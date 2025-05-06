@@ -11,8 +11,8 @@ export const WeNeedYou = () => {
   return html`<section class="dot section we-need-you">
     <div class="dot container">
       <div class="dot content">
-        <h2 class="dot">Call for speakers</h2>
-        <p class="dot">
+        <h2 class="dot we-need-you-title">Call for speakers</h2>
+        <p class="dot we-need-you-text">
           Makers, designers, developers, number-crushers, project leaders, dots,
           market influencers, engineers, dot-dots, business innovators, and
           more.
