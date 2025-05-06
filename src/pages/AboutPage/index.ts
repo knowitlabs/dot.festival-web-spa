@@ -7,7 +7,7 @@ const html = String.raw;
 export const AboutPage = () => {
   return html`<section class="dot section">
     <div class="dot container">
-      <p class="dot about">
+      <p class="dot about-leading-paragraph">
       Knowit Festival, formerly known as Knowit Developer Summit (KDS), is a conference for Knowit employees, by Knowit employees. As KDS originally was an arena for the developers in Knowit, the new concept embraces the wide range of subject areas and expertise found in our employees, as well as underlying our need/mission/? for working interdisciplinary. Together we get it done!
       </p>
       <p class="dot">
@@ -18,17 +18,17 @@ export const AboutPage = () => {
     content: 'Code of Conduct'
   })}
       </p>
-      <h2 class="dot">
+      <h2 class="dot about-title">
       Knowit Festival 2025
       </h2>
-      <p class="dot>
-      In 2025, the conference will be in Norway. More information to come. The goal of the conference is to create a safe and low-threshold arena for our employees to share, learn and develop, as well as creating stronger bonds between our colleagues.
+      <p class="dot about-text>
+      In 2025, the conference will be in Sweden. The goal of the conference is to create a safe and low-threshold arena for our employees to share, learn and develop, as well as creating stronger bonds between our colleagues.
       </p>
-      <p class="dot>
+      <p class="dot about-text>
       The ambition for Knowit Festival is that it will be held annually and that its location varies from year to year.
       </p>
     <div class="dot container">
-      <h2 class="dot">FAQ</h2>
+      <h2 class="dot about-faq-title">FAQ</h2>
       ${FAQ({
     questions: [
       {

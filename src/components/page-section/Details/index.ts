@@ -9,8 +9,8 @@ export const Details = () => {
   return html`<section class="dot section details">
     <div class="dot container">
       <div class="dot content">
-        <h2 class="dot when">Together we connect the dots!</h2>
-        <p class="dot pretitle second">Knowit Festival is a conference for Knowit employees, by knowit employees.</p>
+        <h2 class="dot details-title">Together we connect the dots!</h2>
+        <p class="dot pretitle second details-text">Knowit Festival is a conference for Knowit employees, by knowit employees.</p>
         ${Link({
           to: 'about',
           className: 'button primary cfp border white',
