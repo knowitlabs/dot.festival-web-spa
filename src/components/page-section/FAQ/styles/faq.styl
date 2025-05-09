@@ -3,7 +3,12 @@
   margin-right auto
   position relative
   width 100%
-  max-width 72ch
+  max-width: 72ch;
+  background-color var(--dot-color-purple);
+  margin-bottom 8px
+  padding 1rem 0.75rem
+  border-radius 16px
+  color black
 
 
 .dot.faq .dot.question::-webkit-details-marker 
@@ -27,7 +32,6 @@
   border none
   appearance none
   -webkit-appearance none
-  padding 1rem 0
 
 .dot.faq .dot.answer 
   font-weight normal
@@ -44,15 +48,13 @@
   display block
   visibility hidden
 
-
-  
-
 .dot.faq[open] .dot.answer 
   display block
   visibility visible
   max-height 50vh
   overflow-x hidden
   overflow-y auto
+  padding-top 1rem
 
 .dot.faq[open] .dot.answer 
   & p.dot
