@@ -70,11 +70,10 @@ const Header = async () => {
             >More coming soon!</span
           >-->
           ${Link({
-    to: 'https://sessionize.com/knowit-festival-2025',
-    server: true,
+    to: '/register',
     className: 'button primary cfp',
     content: `
-            ${translate('callForSpeakers')}`
+            ${translate('primary-register')}`
   })}
           ${Link({
     to: '/about',

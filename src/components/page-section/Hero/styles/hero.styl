@@ -2,7 +2,7 @@
   position relative
   display grid
   grid-template-areas "hero-image"\
-                      "hero-title"\
+                      "hero-title "\
                       "hero-date"\
                       "hero-location"\
                       "hero-secondTitle"\
@@ -25,7 +25,12 @@
     max-width 100%
     margin-bottom 4rem
     @media screen and (min-width: 640px)
-      max-height 20vh
+      max-height 5vh
+    @media screen and (max-width: 640px)
+      max-height 5vh
+      grid-area hero-title
+      margin-left 16rem
+
 
 
     // @media screen and (min-width: 640px)
@@ -35,7 +40,7 @@
     grid-area hero-title
     margin-bottom 1rem
     max-width 600px
-    font-size 58px
+    font-size 40px
     text-align left
     margin-top auto
     @media screen and (min-width: 640px)
@@ -78,6 +83,7 @@ h2.secondTitle
   margin-bottom 0
   font-size 30px
   max-width 30ch
+  
 
 p.secondDescription
   grid-area hero-secondDescription
