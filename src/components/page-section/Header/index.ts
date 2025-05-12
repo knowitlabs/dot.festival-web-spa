@@ -62,7 +62,7 @@ const Header = async () => {
   return html`
     <header class="dot header">
       <div class="dot container">
-        ${Link({ to: '/', content: logo, className: 'logo' })}
+        ${Link({ to: '/', content: logo, className: 'header logo' })}
         <div class="dot global-navigation">
           <!--<span
             class="dot"
@@ -71,33 +71,33 @@ const Header = async () => {
           >-->
           ${Link({
     to: '/register',
-    className: 'button primary cfp',
+    className: 'header button primary cfp',
     content: `
             ${translate('primary-register')}`
   })}
           ${Link({
     to: '/about',
-    className: 'button',
+    className: 'header button',
     content: 'About'
   })}
     <!--  ${Link({
     to: '/program',
-    className: 'button',
+    className: 'header button',
     content: 'Program'
   })}
           ${Link({
     to: '/speakers',
-    className: 'button',
+    className: 'header button',
     content: 'Speakers'
   })}
           ${Link({
     to: '/sessions',
-    className: 'button',
+    className: 'header button',
     content: 'Sessions'
   })}-->
           ${Link({
     to: '/practicalities',
-    className: 'button',
+    className: 'header button',
     content: 'Practicalities'
   })}
 
