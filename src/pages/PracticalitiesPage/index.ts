@@ -15,7 +15,7 @@ export const PracticalitiesPage = () => {
       <p class="dot">
         ${Link({
         to: 'register',
-        className: 'button primary',
+        className: 'button primary cfp',
         content: translate('primary-register')
         })}
       </p>
@@ -44,7 +44,7 @@ export const PracticalitiesPage = () => {
     </div>
 
       <div class="dot container">
-        <h2 class="dot practicalities-faq-title">General information</h2>
+        <h2 class="dot practicalities-faq-title">More information</h2>
         ${FAQ({
           questions: [
             {
@@ -63,7 +63,7 @@ export const PracticalitiesPage = () => {
         })}
       </div>
       <div class="dot container">
-        <h2 class="dot practicalities-faq-title">More information</h2>
+        <h2 class="dot practicalities-faq-title">Cancellation</h2>
         <p class="dot practicalities-text cancellation">
         You may cancel before the 1st of September free of charge. 
         After this, a cancellation fee up to the full price can be billed to your company if neither you nor we can find someone else to take your spot. 

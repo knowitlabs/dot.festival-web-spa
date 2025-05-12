@@ -21,6 +21,16 @@ a.dot.button
   font-weight 400
   padding 1rem 2rem
 
+.dot.button,
+a.dot.header.button
+  @media screen and (max-width: 640px)
+    font-size 14px
+    padding 6px 8px
+    height 2rem
+    &.is-active:not(.cfp)
+      background-color var(--dot-color-dark)
+      color var(--dot-color-purple)
+      text-decoration-line: underline;
 
 .dot.button
   &:hover
@@ -33,6 +43,10 @@ a.dot.button
   &.is-active
     background-color var(--dot-color-pink)
     color var(--dot-color-dark)
+    &:not(.cfp)
+      background-color var(--dot-color-dark)
+      color var(--dot-color-purple)
+      text-decoration-line: underline;
 
 .dot.button
   &.primary,

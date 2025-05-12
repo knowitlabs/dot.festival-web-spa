@@ -10,7 +10,7 @@ const html = String.raw;
 
 export const StartPage = () => {
   return html`
-    ${Section(Container(Hero()))} ${WeNeedYou()} ${Details()}
+    ${Section(Container(Hero()))} ${Container(WeNeedYou())} ${Container(Details())}
     ${/*WhatHappenedToKDS()*/""}
   `;
 };
