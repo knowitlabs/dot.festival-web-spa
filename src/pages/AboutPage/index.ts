@@ -12,7 +12,7 @@ return html`<section class="dot section">
   <div class="dot container">
     <h1 class="dot about-title">About the festival</h1>
     <p class="dot about-leading-paragraph">
-    The ambition for Knowit Festival will be held annually and that its location varies from year to year.
+      Knowit Festival will be held annually and its location varies from year to year.
     </p>
   </div>
 

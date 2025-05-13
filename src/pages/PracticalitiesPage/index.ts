@@ -23,7 +23,7 @@ export const PracticalitiesPage = () => {
         <div class="dot content">
           <h2 class="dot practicalities-title">General information</h2>
           <p class="dot practicalities-text">
-            Registration fee Knowit Festival: NOK 5 500,-          
+            Registration fee Knowit Festival: SEK 5 500,-          
           </p>
           <p class="dot practicalities-text">
             The following is covered by this cost:
@@ -53,11 +53,11 @@ export const PracticalitiesPage = () => {
             },
             {
               q: 'Hotel',
-              a: ''
+              a: 'We have booked MJ\'s - one of Malmö\'s most unique and stylish hotels - for both accommodation and the official festival party! <br> With bold design, warm hospitality and the entire hotel exclusively reserved for us, MJs is the perfect place to continue the conversations, enjoy great food and have fun together.<br><br>The evening party takes place at MJ\'s on Friday, November 7. <br><br>All rooms are pre-booked for Knowit employees. <br>Location: Mäster Johansgatan 13, 211 21 Malmö <br><a href="https://mjs.life/">Explore MJ\'s</a>'
             },
             {
               q: 'Travel route suggestion',
-              a: 'TBD'
+              a: 'Traveling from other Knowit offices in Sweden?<br>Malmö is easily accessible by train from major Swedish cities:<ul><li>From Stockholm: ~4.5 hours by direct SJ train</li><li>From Gothenburg: ~2.5-3 hours</li><li>From other cities in southern Sweden: even quicker!</li></ul>Flying in from abroad or from northern Sweden?<br>The nearest airport is Copenhagen Airport (Kastrup) - just 20 minutes from Malmö by train across the Öresund Bridge. Trains run every 20 minutes and take you directly to Malmö Central Station.<br><br>We recommend booking your travel early to secure good prices and connections.'
             }
           ]
         })}
