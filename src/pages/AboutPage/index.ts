@@ -54,7 +54,7 @@ return html`<section class="dot section">
         },
         {
           q: 'Which hotel am I staying at?',
-          a: 'TBD'
+          a: 'We have booked MJ\'s - one of Malmö\'s most unique and stylish hotels - for both accommodation and the official festival party! <br> With bold design, warm hospitality and the entire hotel exclusively reserved for us, MJs is the perfect place to continue the conversations, enjoy great food and have fun together.<br><br>The evening party takes place at MJ\'s on Friday, November 7. <br><br>All rooms are pre-booked for Knowit employees. <br>Location: Mäster Johansgatan 13, 211 21 Malmö <br><a href="https://mjs.life/">Explore MJ\'s</a>'
         }
       ]
     })}
