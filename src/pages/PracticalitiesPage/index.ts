@@ -49,7 +49,7 @@ export const PracticalitiesPage = () => {
           questions: [
             {
               q: 'Venue',
-              a: ''
+              a: 'Studio Malmö is our main festival venue - a vibrant hub for innovation, collaboration and creativity located in the heart of Malmö. With stunning views over the canal and modern conference facilities, Studio sets the perfect atmosphere for inspiring talks, workshops and spontaneous connections, <br>Location: Nordenskiöldsgatan 24, 211 19 Malmö<br> <a href="https://www.studiomalmo.com/">Learn more about the venue</a>'
             },
             {
               q: 'Hotel',
@@ -67,7 +67,7 @@ export const PracticalitiesPage = () => {
         <p class="dot practicalities-text cancellation">
         You may cancel before the 1st of September free of charge. 
         After this, a cancellation fee up to the full price can be billed to your company if neither you nor we can find someone else to take your spot. 
-        If you wish to cancel or change anything else regarding your registration after submission, send a mail to <a href="mailto:info@knowitfestival.eu">info@knowitfestival.eu</a>
+        If you wish to cancel or change anything else regarding your registration after submission, send a mail to <a class="cancellation-link" href="mailto:info@knowitfestival.eu">info@knowitfestival.eu</a>
         Remember to consult with your leader before registration.
         </p>
   </section>`;
