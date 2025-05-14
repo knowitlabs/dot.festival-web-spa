@@ -23,7 +23,7 @@ export const PracticalitiesPage = () => {
         <div class="dot content">
           <h2 class="dot practicalities-title">General information</h2>
           <p class="dot practicalities-text">
-            Registration fee Knowit Festival: SEK 5 500,-          
+            Registration fee Knowit Festival: <span style="white-space:nowrap">SEK 5 500,-</span>   
           </p>
           <p class="dot practicalities-text">
             The following is covered by this cost:
